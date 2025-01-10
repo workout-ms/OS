@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/ioctl.h>
+#include <errno.h>
+
+#define DEVICE_PATH "/dev/mychardev"
+#define BUFFER_SIZE 1024
+
+int main() {
+    int fd;
+    char write_buffer[BUFFER_SIZE] = "Hello, i’m Mir!";
+    char read_buffer[BUFFER_SIZE];
+    ssize_t bytes_written, bytes_read;
+    fd = open(DEVICE_PATH, O_RDWR);
+    if (fd == -1) {
+        perror("Failed to open device");
+        return 1;
+    }
+    bytes_written = write(fd, write_buffer, strlen(write_buffer));
+    if (bytes_written == -1) {
+        perror("Failed to write to device");
+        close(fd);
+        return 1;
+    }
+    printf("Written %zd bytes: %s\n", bytes_written, write_buffer);
+
+    bytes_read = read(fd, read_buffer, BUFFER_SIZE);
+    if (bytes_read == -1) {
+        perror("Failed to read from device");
+        close(fd);
+        return 1;
+    }
+    read_buffer[bytes_read] = '\0'; 
+    printf("Read %zd bytes: %s\n", bytes_read, read_buffer);
+
+    close(fd);
+    printf("Device closed\n");
+
+    return 0;
+}

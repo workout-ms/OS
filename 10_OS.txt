@@ -1,0 +1,160 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo apt-get install \
+> ca-certificates \
+> curl \
+> gnupg \
+> lsb-release
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово    	 
+Уже установлен пакет ca-certificates самой новой версии (20240203).
+ca-certificates помечен как установленный вручную.
+Уже установлен пакет gnupg самой новой версии (2.4.4-2ubuntu18).
+gnupg помечен как установленный вручную.
+Уже установлен пакет lsb-release самой новой версии (12.1-1).
+lsb-release помечен как установленный вручную.
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  nginx nginx-common
+Для их удаления используйте «sudo apt autoremove».
+Следующие НОВЫЕ пакеты будут установлены:
+  curl
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+Необходимо скачать 240 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 593 kB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu oracular-updates/main amd64 curl amd64 8.9.1-2ubuntu2.2 [240 kB]
+Получено 240 kB за 1с (243 kB/s)
+Выбор ранее не выбранного пакета curl.
+(Чтение базы данных … на данный момент установлено 199959 файлов и каталогов.)
+Подготовка к распаковке …/curl_8.9.1-2ubuntu2.2_amd64.deb …
+Распаковывается curl (8.9.1-2ubuntu2.2) …
+Настраивается пакет curl (8.9.1-2ubuntu2.2) …
+Обрабатываются триггеры для man-db (2.12.1-3) …
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo mkdir -p /etc/apt/keyrings
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ curl -fsSL
+curl: (2) no URL specified
+curl: try 'curl --help' or 'curl --manual' for more information
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ curl -fsSL http://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo \
+> "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] http://download.docker.com/linux/ubuntu \
+> $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo apt-get update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu oracular InRelease
+Сущ:4 http://security.ubuntu.com/ubuntu oracular-security InRelease       	 
+Игн:5 https://nginx.org/packages/mainline/debian focal InRelease          	 
+Сущ:6 http://ru.archive.ubuntu.com/ubuntu oracular-updates InRelease      	 
+Сущ:7 http://ru.archive.ubuntu.com/ubuntu oracular-backports InRelease    	 
+Ошб:8 https://nginx.org/packages/mainline/debian focal Release            	 
+  404  Not Found [IP: 52.58.199.22 443]
+Пол:2 https://download.docker.com/linux/ubuntu oracular InRelease [32,9 kB]    
+Игн:3 https://packages.netxms.org/ubuntu oracular InRelease               	 
+Ошб:9 https://packages.netxms.org/ubuntu oracular Release
+  404  Not Found [IP: 172.67.198.50 443]
+Пол:10 https://download.docker.com/linux/ubuntu oracular/stable amd64 Packages [5 794 B]
+Чтение списков пакетов… Готово        	 
+E: Репозиторий «https://nginx.org/packages/mainline/debian focal Release» не содержит файла Release.
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+N: Информацию о создании репозитория и настройках пользователя смотрите в справочной странице apt-secure(8).
+E: Репозиторий «http://packages.netxms.org/ubuntu oracular Release» не содержит файла Release.
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+N: Информацию о создании репозитория и настройках пользователя смотрите в справочной странице apt-secure(8).
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово    	 
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  nginx nginx-common
+Для их удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  docker-buildx-plugin docker-ce-rootless-extras docker-compose-plugin git
+  git-man liberror-perl libslirp0 pigz slirp4netns
+Предлагаемые пакеты:
+  aufs-tools cgroupfs-mount | cgroup-lite git-daemon-run | git-daemon-sysvinit
+  git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+Следующие НОВЫЕ пакеты будут установлены:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-ce-rootless-extras docker-compose-plugin git git-man liberror-perl
+  libslirp0 pigz slirp4netns
+Обновлено 0 пакетов, установлено 12 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+Необходимо скачать 129 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 472 MB.
+Хотите продолжить? [Д/н] y
+Пол:2 http://ru.archive.ubuntu.com/ubuntu oracular/universe amd64 pigz amd64 2.8-1 [65,6 kB]
+Пол:1 https://download.docker.com/linux/ubuntu oracular/stable amd64 containerd.io amd64 1.7.24-1 [29,5 MB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu oracular/main amd64 liberror-perl all 0.17029-2 [25,6 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu oracular/main amd64 git-man all 1:2.45.2-1ubuntu1 [1 122 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu oracular/main amd64 git amd64 1:2.45.2-1ubuntu1 [3 928 kB]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu oracular/main amd64 libslirp0 amd64 4.8.0-1ubuntu1 [65,7 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu oracular/universe amd64 slirp4netns amd64 1.2.1-1build2 [34,9 kB]
+Пол:3 https://download.docker.com/linux/ubuntu oracular/stable amd64 docker-buildx-plugin amd64 0.19.3-1~ubuntu.24.10~oracular [30,7 MB]
+Пол:4 https://download.docker.com/linux/ubuntu oracular/stable amd64 docker-ce-cli amd64 5:27.4.1-1~ubuntu.24.10~oracular [15,1 MB]
+Пол:5 https://download.docker.com/linux/ubuntu oracular/stable amd64 docker-ce amd64 5:27.4.1-1~ubuntu.24.10~oracular [25,8 MB]
+Пол:6 https://download.docker.com/linux/ubuntu oracular/stable amd64 docker-ce-rootless-extras amd64 5:27.4.1-1~ubuntu.24.10~oracular [9 588 kB]
+Пол:7 https://download.docker.com/linux/ubuntu oracular/stable amd64 docker-compose-plugin amd64 2.32.1-1~ubuntu.24.10~oracular [12,8 MB]
+Получено 129 MB за 34с (3 840 kB/s)                                       	 
+Выбор ранее не выбранного пакета pigz.
+(Чтение базы данных … на данный момент установлено 199970 файлов и каталогов.)
+Подготовка к распаковке …/00-pigz_2.8-1_amd64.deb …
+Распаковывается pigz (2.8-1) …
+Выбор ранее не выбранного пакета containerd.io.
+Подготовка к распаковке …/01-containerd.io_1.7.24-1_amd64.deb …
+Распаковывается containerd.io (1.7.24-1) …
+Выбор ранее не выбранного пакета docker-buildx-plugin.
+Подготовка к распаковке …/02-docker-buildx-plugin_0.19.3-1~ubuntu.24.10~oracular_amd64.deb …
+Распаковывается docker-buildx-plugin (0.19.3-1~ubuntu.24.10~oracular) …
+Выбор ранее не выбранного пакета docker-ce-cli.
+Подготовка к распаковке …/03-docker-ce-cli_5%3a27.4.1-1~ubuntu.24.10~oracular_amd64.deb …
+Распаковывается docker-ce-cli (5:27.4.1-1~ubuntu.24.10~oracular) …
+Выбор ранее не выбранного пакета docker-ce.
+Подготовка к распаковке …/04-docker-ce_5%3a27.4.1-1~ubuntu.24.10~oracular_amd64.deb …
+Распаковывается docker-ce (5:27.4.1-1~ubuntu.24.10~oracular) …
+Выбор ранее не выбранного пакета docker-ce-rootless-extras.
+Подготовка к распаковке …/05-docker-ce-rootless-extras_5%3a27.4.1-1~ubuntu.24.10~oracular_amd64.deb …
+Распаковывается docker-ce-rootless-extras (5:27.4.1-1~ubuntu.24.10~oracular) …
+Выбор ранее не выбранного пакета docker-compose-plugin.
+Подготовка к распаковке …/06-docker-compose-plugin_2.32.1-1~ubuntu.24.10~oracular_amd64.deb …
+Распаковывается docker-compose-plugin (2.32.1-1~ubuntu.24.10~oracular) …
+Выбор ранее не выбранного пакета liberror-perl.
+Подготовка к распаковке …/07-liberror-perl_0.17029-2_all.deb …
+Распаковывается liberror-perl (0.17029-2) …
+Выбор ранее не выбранного пакета git-man.
+Подготовка к распаковке …/08-git-man_1%3a2.45.2-1ubuntu1_all.deb …
+Распаковывается git-man (1:2.45.2-1ubuntu1) …
+Выбор ранее не выбранного пакета git.
+Подготовка к распаковке …/09-git_1%3a2.45.2-1ubuntu1_amd64.deb …
+Распаковывается git (1:2.45.2-1ubuntu1) …
+Выбор ранее не выбранного пакета libslirp0:amd64.
+Подготовка к распаковке …/10-libslirp0_4.8.0-1ubuntu1_amd64.deb …
+Распаковывается libslirp0:amd64 (4.8.0-1ubuntu1) …
+Выбор ранее не выбранного пакета slirp4netns.
+Подготовка к распаковке …/11-slirp4netns_1.2.1-1build2_amd64.deb …
+Распаковывается slirp4netns (1.2.1-1build2) …
+Настраивается пакет liberror-perl (0.17029-2) …
+Настраивается пакет docker-buildx-plugin (0.19.3-1~ubuntu.24.10~oracular) …
+Настраивается пакет containerd.io (1.7.24-1) …
+Created symlink '/etc/systemd/system/multi-user.target.wants/containerd.service' → '/usr/lib/systemd/system/containerd.service'.
+Настраивается пакет docker-compose-plugin (2.32.1-1~ubuntu.24.10~oracular) …
+Настраивается пакет docker-ce-cli (5:27.4.1-1~ubuntu.24.10~oracular) …
+Настраивается пакет libslirp0:amd64 (4.8.0-1ubuntu1) …
+Настраивается пакет pigz (2.8-1) …
+Настраивается пакет git-man (1:2.45.2-1ubuntu1) …
+Настраивается пакет docker-ce-rootless-extras (5:27.4.1-1~ubuntu.24.10~oracular) …
+Настраивается пакет slirp4netns (1.2.1-1build2) …
+Настраивается пакет docker-ce (5:27.4.1-1~ubuntu.24.10~oracular) …
+Created symlink '/etc/systemd/system/multi-user.target.wants/docker.service' → '/usr/lib/systemd/system/docker.service'.
+Created symlink '/etc/systemd/system/sockets.target.wants/docker.socket' → '/usr/lib/systemd/system/docker.socket'.
+Настраивается пакет git (1:2.45.2-1ubuntu1) …
+Обрабатываются триггеры для man-db (2.12.1-3) …
+Обрабатываются триггеры для libc-bin (2.40-1ubuntu3) …
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo docker run ubuntu
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+de44b265507a: Pull complete
+Digest: sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab
+Status: Downloaded newer image for ubuntu:latest
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo docker ps -a
+CONTAINER ID   IMAGE 	COMMAND   	CREATED      	STATUS                  	PORTS 	NAMES
+5af4e002fc9b   ubuntu	"/bin/bash"   18 seconds ago   Exited (0) 15 seconds ago         	romantic_sutherland
+akimovmir@akimovmir-VMware-Virtual-Platform:~$
+
+
+

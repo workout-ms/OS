@@ -1,0 +1,311 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ ls
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ nano chardev.c
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ nano Makefile
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ nano Makefile
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ ls
+chardev.c  Makefile
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo make
+Makefile:15: *** пропущен разделитель.  Останов.
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo make
+Makefile:15: *** пропущен разделитель.  Останов.
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ nano Makefile
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo make
+make -C /lib/modules/6.11.0-13-generic/build M=/home/akimovmir/my_module modules
+make[1]: вход в каталог «/usr/src/linux-headers-6.11.0-13-generic»
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-14 (Ubuntu 14.2.0-4ubuntu2) 14.2.0
+  You are using:       	gcc-14 (Ubuntu 14.2.0-4ubuntu2) 14.2.0
+  CC [M]  /home/akimovmir/my_module/chardev.o
+  MODPOST /home/akimovmir/my_module/Module.symvers
+  CC [M]  /home/akimovmir/my_module/chardev.mod.o
+  LD [M]  /home/akimovmir/my_module/chardev.ko
+  BTF [M] /home/akimovmir/my_module/chardev.ko
+Skipping BTF generation for /home/akimovmir/my_module/chardev.ko due to unavailability of vmlinux
+make[1]: выход из каталога «/usr/src/linux-headers-6.11.0-13-generic»
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ ls
+chardev.c   chardev.mod	chardev.mod.o  Makefile   	Module.symvers
+chardev.ko  chardev.mod.c  chardev.o  	modules.order
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ nano coderun.c
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ ls /dev
+autofs       	loop15    	sg2   	tty33  ttyprintk  userfaultfd
+block        	loop16    	shm   	tty34  ttyS0  	userio
+bsg          	loop17    	snapshot  tty35  ttyS1  	vcs
+btrfs-control	loop18    	snd   	tty36  ttyS10 	vcs1
+bus          	loop19    	sr0   	tty37  ttyS11 	vcs2
+cdrom        	loop2     	sr1   	tty38  ttyS12 	vcs3
+char         	loop20    	stderr	tty39  ttyS13 	vcs4
+console      	loop3     	stdin 	tty4   ttyS14 	vcs5
+core         	loop4     	stdout	tty40  ttyS15 	vcs6
+cpu          	loop5     	tty   	tty41  ttyS16 	vcsa
+cpu_dma_latency  loop6     	tty0  	tty42  ttyS17 	vcsa1
+cuse         	loop7     	tty1  	tty43  ttyS18 	vcsa2
+disk         	loop8     	tty10 	tty44  ttyS19 	vcsa3
+dma_heap     	loop9     	tty11 	tty45  ttyS2  	vcsa4
+dmmidi       	loop-control  tty12 	tty46  ttyS20 	vcsa5
+dri          	mapper    	tty13 	tty47  ttyS21 	vcsa6
+ecryptfs     	mcelog    	tty14 	tty48  ttyS22 	vcsu
+fb0          	mem       	tty15 	tty49  ttyS23 	vcsu1
+fd           	midi      	tty16 	tty5   ttyS24 	vcsu2
+fd0          	mqueue    	tty17 	tty50  ttyS25 	vcsu3
+full         	net       	tty18 	tty51  ttyS26 	vcsu4
+fuse         	null      	tty19 	tty52  ttyS27 	vcsu5
+hidraw0      	nvram     	tty2  	tty53  ttyS28 	vcsu6
+hpet         	port      	tty20 	tty54  ttyS29 	vfio
+hugepages    	ppp       	tty21 	tty55  ttyS3  	vga_arbiter
+hwrng        	psaux     	tty22 	tty56  ttyS30 	vhci
+initctl      	ptmx      	tty23 	tty57  ttyS31 	vhost-net
+input        	pts       	tty24 	tty58  ttyS4  	vhost-vsock
+kmsg         	random    	tty25 	tty59  ttyS5  	vmci
+log          	rfkill    	tty26 	tty6   ttyS6  	vsock
+loop0        	rtc       	tty27 	tty60  ttyS7  	zero
+loop1        	rtc0      	tty28 	tty61  ttyS8  	zfs
+loop10       	sda       	tty29 	tty62  ttyS9
+loop11       	sda1      	tty3  	tty63  udmabuf
+loop12       	sda2      	tty30 	tty7   uhid
+loop13       	sg0       	tty31 	tty8   uinput
+loop14       	sg1       	tty32 	tty9   urandom
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ dmesg | tail -n 20
+dmesg: чтение буфера ядра завершилось неудачно: Операция не позволена
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo dmesg | tail -n 20[ 1255.514886] docker0: port 1(veth579ce12) entered disabled state
+[ 1326.296624] workqueue: css_release_work_fn hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+[ 1348.157118] workqueue: hub_event hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+[ 1348.510208] workqueue: psi_avgs_work hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+[ 1530.407094] perf: interrupt took too long (33297 > 33056), lowering kernel.perf_event_max_sample_rate to 6000
+[ 1702.185800] workqueue: hub_event hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+[ 1972.598649] hrtimer: interrupt took 4131385 ns
+[ 1974.651782] workqueue: hub_event hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+[ 2137.341570] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=74 TOS=0x00 PREC=0x00 TTL=128 ID=64280 PROTO=UDP SPT=49635 DPT=5355 LEN=54
+[ 2137.495720] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=652 TOS=0x00 PREC=0x00 TTL=128 ID=64283 PROTO=UDP SPT=49639 DPT=3702 LEN=632
+[ 2137.619360] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=74 TOS=0x00 PREC=0x00 TTL=128 ID=64285 PROTO=UDP SPT=49641 DPT=5353 LEN=54
+[ 2137.635647] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=146 TOS=0x00 PREC=0x00 TTL=128 ID=64286 PROTO=UDP SPT=49638 DPT=1900 LEN=126
+[ 2137.635808] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=152 TOS=0x00 PREC=0x00 TTL=128 ID=64287 PROTO=UDP SPT=49638 DPT=1900 LEN=132
+[ 2138.836139] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=64288 DF PROTO=TCP SPT=62905 DPT=62078 WINDOW=64240 RES=0x00 SYN URGP=0
+[ 2139.851490] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=64290 DF PROTO=TCP SPT=62905 DPT=62078 WINDOW=64240 RES=0x00 SYN URGP=0
+[ 2140.245084] workqueue: blk_mq_run_work_fn hogged CPU for >10000us 19 times, consider switching to WQ_UNBOUND
+[ 2140.928465] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=146 TOS=0x00 PREC=0x00 TTL=128 ID=64295 PROTO=UDP SPT=49638 DPT=1900 LEN=126
+[ 2140.928832] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=152 TOS=0x00 PREC=0x00 TTL=128 ID=64296 PROTO=UDP SPT=49638 DPT=1900 LEN=132
+[ 2140.928852] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=652 TOS=0x00 PREC=0x00 TTL=128 ID=64298 PROTO=UDP SPT=49639 DPT=3702 LEN=632
+[ 2243.617902] workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo insmod chardev.ko
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo dmesg | tail -n 20
+[ 1348.510208] workqueue: psi_avgs_work hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+[ 1530.407094] perf: interrupt took too long (33297 > 33056), lowering kernel.perf_event_max_sample_rate to 6000
+[ 1702.185800] workqueue: hub_event hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+[ 1972.598649] hrtimer: interrupt took 4131385 ns
+[ 1974.651782] workqueue: hub_event hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+[ 2137.341570] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=74 TOS=0x00 PREC=0x00 TTL=128 ID=64280 PROTO=UDP SPT=49635 DPT=5355 LEN=54
+[ 2137.495720] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=652 TOS=0x00 PREC=0x00 TTL=128 ID=64283 PROTO=UDP SPT=49639 DPT=3702 LEN=632
+[ 2137.619360] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=74 TOS=0x00 PREC=0x00 TTL=128 ID=64285 PROTO=UDP SPT=49641 DPT=5353 LEN=54
+[ 2137.635647] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=146 TOS=0x00 PREC=0x00 TTL=128 ID=64286 PROTO=UDP SPT=49638 DPT=1900 LEN=126
+[ 2137.635808] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=152 TOS=0x00 PREC=0x00 TTL=128 ID=64287 PROTO=UDP SPT=49638 DPT=1900 LEN=132
+[ 2138.836139] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=64288 DF PROTO=TCP SPT=62905 DPT=62078 WINDOW=64240 RES=0x00 SYN URGP=0
+[ 2139.851490] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=64290 DF PROTO=TCP SPT=62905 DPT=62078 WINDOW=64240 RES=0x00 SYN URGP=0
+[ 2140.245084] workqueue: blk_mq_run_work_fn hogged CPU for >10000us 19 times, consider switching to WQ_UNBOUND
+[ 2140.928465] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=146 TOS=0x00 PREC=0x00 TTL=128 ID=64295 PROTO=UDP SPT=49638 DPT=1900 LEN=126
+[ 2140.928832] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=152 TOS=0x00 PREC=0x00 TTL=128 ID=64296 PROTO=UDP SPT=49638 DPT=1900 LEN=132
+[ 2140.928852] [UFW BLOCK] IN=ens33 OUT= MAC=00:0c:29:28:8a:0d:00:50:56:c0:00:08:08:00 SRC=192.168.244.1 DST=192.168.244.129 LEN=652 TOS=0x00 PREC=0x00 TTL=128 ID=64298 PROTO=UDP SPT=49639 DPT=3702 LEN=632
+[ 2243.617902] workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+[ 2470.299493] chardev: loading out-of-tree module taints kernel.
+[ 2470.300086] chardev: module verification failed: signature and/or required key missing - tainting kernel
+[ 2470.348304] Char device registered with major 240 and minor 0
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ ls /dev
+autofs       	loop15    	sg2   	tty33  ttyprintk  userfaultfd
+block        	loop16    	shm   	tty34  ttyS0  	userio
+bsg          	loop17    	snapshot  tty35  ttyS1  	vcs
+btrfs-control	loop18    	snd   	tty36  ttyS10 	vcs1
+bus          	loop19    	sr0   	tty37  ttyS11 	vcs2
+cdrom        	loop2     	sr1   	tty38  ttyS12 	vcs3
+char         	loop20    	stderr	tty39  ttyS13 	vcs4
+console      	loop3     	stdin 	tty4   ttyS14 	vcs5
+core         	loop4     	stdout	tty40  ttyS15 	vcs6
+cpu          	loop5     	tty   	tty41  ttyS16 	vcsa
+cpu_dma_latency  loop6     	tty0  	tty42  ttyS17 	vcsa1
+cuse         	loop7     	tty1  	tty43  ttyS18 	vcsa2
+disk         	loop8     	tty10 	tty44  ttyS19 	vcsa3
+dma_heap     	loop9     	tty11 	tty45  ttyS2  	vcsa4
+dmmidi       	loop-control  tty12 	tty46  ttyS20 	vcsa5
+dri          	mapper    	tty13 	tty47  ttyS21 	vcsa6
+ecryptfs     	mcelog    	tty14 	tty48  ttyS22 	vcsu
+fb0          	mem       	tty15 	tty49  ttyS23 	vcsu1
+fd           	midi      	tty16 	tty5   ttyS24 	vcsu2
+fd0          	mqueue    	tty17 	tty50  ttyS25 	vcsu3
+full         	net       	tty18 	tty51  ttyS26 	vcsu4
+fuse         	null      	tty19 	tty52  ttyS27 	vcsu5
+hidraw0      	nvram     	tty2  	tty53  ttyS28 	vcsu6
+hpet         	port      	tty20 	tty54  ttyS29 	vfio
+hugepages    	ppp       	tty21 	tty55  ttyS3  	vga_arbiter
+hwrng        	psaux     	tty22 	tty56  ttyS30 	vhci
+initctl      	ptmx      	tty23 	tty57  ttyS31 	vhost-net
+input        	pts       	tty24 	tty58  ttyS4  	vhost-vsock
+kmsg         	random    	tty25 	tty59  ttyS5  	vmci
+log          	rfkill    	tty26 	tty6   ttyS6  	vsock
+loop0        	rtc       	tty27 	tty60  ttyS7  	zero
+loop1        	rtc0      	tty28 	tty61  ttyS8  	zfs
+loop10       	sda       	tty29 	tty62  ttyS9
+loop11       	sda1      	tty3  	tty63  udmabuf
+loop12       	sda2      	tty30 	tty7   uhid
+loop13       	sg0       	tty31 	tty8   uinput
+loop14       	sg1       	tty32 	tty9   urandom
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo mknod /dev/mychardev c 240 0
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ gcc -o run coderun.c
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ ./run
+Failed to open device: Permission denied
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ sudo ./run
+Written 17 bytes: Hello, i’m Mir!
+Read 1007 bytes:
+Device closed
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ cat chardev.c
+#include <linux/module.h>
+#include <linux/fs.h>
+#include <linux/cdev.h>
+#include <linux/uaccess.h>
+
+
+#define DEVICE_NAME "mirchardev"
+#define BUFFER_SIZE 1024
+
+
+static char device_buffer[BUFFER_SIZE];
+static int open_count = 0;
+static dev_t dev_num;
+static struct cdev my_cdev;
+
+
+// Закрытие устройства
+static int dev_release(struct inode *inode, struct file *file) {
+	printk(KERN_INFO "Device closed\n");
+	return 0;
+}
+// Открытие устройства
+static int dev_open(struct inode *inode, struct file *file) {
+	open_count++;
+	printk(KERN_INFO "Device opened %d times\n", open_count);
+	return 0;
+}
+// Чтение данных из устройства
+static ssize_t dev_read(struct file *file, char __user *user_buffer, size_t len, loff_t *offset) {
+	size_t bytes_to_read = min(len, (size_t)(BUFFER_SIZE - *offset));
+
+
+	if (bytes_to_read == 0) {
+    	printk(KERN_INFO "Nothing to read\n");
+    	return 0;
+	}
+
+
+	if (copy_to_user(user_buffer, device_buffer + *offset, bytes_to_read)) {
+    	return -EFAULT;
+	}
+
+
+	*offset += bytes_to_read;
+	printk(KERN_INFO "Read %zu bytes from device\n", bytes_to_read);
+	return bytes_to_read;
+}
+
+
+// Запись данных в устройство
+static ssize_t dev_write(struct file *file, const char __user *user_buffer, size_t len, loff_t *offset) {
+	size_t bytes_to_write = min(len, (size_t)(BUFFER_SIZE - *offset));
+
+
+	if (bytes_to_write == 0) {
+    	printk(KERN_INFO "No space left to write\n");
+    	return -ENOMEM;
+	}
+
+
+	if (copy_from_user(device_buffer + *offset, user_buffer, bytes_to_write)) {
+    	return -EFAULT;
+	}
+
+
+	*offset += bytes_to_write;
+	printk(KERN_INFO "Wrote %zu bytes to device\n", bytes_to_write);
+	return bytes_to_write;
+}
+
+
+static struct file_operations fops = {
+	.owner = THIS_MODULE,
+	.open = dev_open,
+	.release = dev_release,
+	.read = dev_read,
+	.write = dev_write,
+};
+
+
+// Инициализация модуля
+static int __init mychardev_init(void) {
+	if (alloc_chrdev_region(&dev_num, 0, 1, DEVICE_NAME) < 0) {
+    	printk(KERN_ALERT "Failed to allocate a device number\n");
+    	return -1;
+	}
+
+
+	cdev_init(&my_cdev, &fops);
+	if (cdev_add(&my_cdev, dev_num, 1) < 0) {
+    	unregister_chrdev_region(dev_num, 1);
+    	printk(KERN_ALERT "Failed to add cdev\n");
+    	return -1;
+	}
+
+
+	printk(KERN_INFO "Char device registered with major %d and minor %d\n", MAJOR(dev_num), MINOR(dev_num));
+	return 0;
+}
+
+
+// Удаление модуля
+static void __exit mychardev_exit(void) {
+	cdev_del(&my_cdev);
+	unregister_chrdev_region(dev_num, 1);
+	printk(KERN_INFO "Char device unregistered\n");
+}
+
+
+module_init(mychardev_init);
+module_exit(mychardev_exit);
+
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Your Name");
+MODULE_DESCRIPTION("Simple Character Device Driver");
+akimovmir@akimovmir-VMware-Virtual-Platform:~/my_module$ cat Makefile
+# Имя модуля
+MODULE_NAME = chardev
+
+# Путь к заголовкам ядра
+KERNEL_DIR = /lib/modules/$(shell uname -r)/build
+
+obj-m += chardev.o
+# Текущая директория
+PWD := $(shell pwd)
+
+# Цели
+all: build
+
+build:
+	$(MAKE) -C $(KERNEL_DIR) M=$(PWD) modules
+
+clean:
+	$(MAKE) -C $(KERNEL_DIR) M=$(PWD) clean
+
+install: build
+	@sudo insmod $(MODULE_NAME).ko
+	@echo "Module $(MODULE_NAME) installed."
+
+uninstall:
+	@sudo rmmod $(MODULE_NAME)
+	@echo "Module $(MODULE_NAME) removed."
+
+test:
+	@echo "Testing $(MODULE_NAME)..."
+	@sudo dmesg | tail
+
+# Условие по умолчанию
+.PHONY: all build clean install uninstall test
+
+
+

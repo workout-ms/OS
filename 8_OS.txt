@@ -1,0 +1,43 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ mkfifo lab
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+1_OC  Desktop  Documents  Downloads  homework  lab  Mir  Music  Pictures  Public  snap  Templates  Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo "Hello" > lab
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo hi > lab
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ps aux | grep tail
+akimovm+	5043  0.0  0.0  17052  1956 pts/1	S+   14:54   0:00 tail -f ./lab
+akimovm+	5065  0.0  0.0  17912  2380 pts/0	S+   14:55   0:00 grep --color=auto tail
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ kill -15 5043
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ top | grep systemd
+	609 systemd+  20   0   16740   7292   6524 S   0,3   0,3   0:01.74
+
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo hello world | grep hello
+hello world
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ nano text.txt
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cat text.txt | grep 123
+123 text form txt file
+akimovmir@akimovmir-VMware-Virtual-Platform:~$
+
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ mkfifo lab
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+1_OC  Desktop  Documents  Downloads  homework  lab  Mir  Music  Pictures  Public  snap  Templates  Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo "Hello" > lab
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo hi > lab
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ps aux | grep tail
+akimovm+	5043  0.0  0.0  17052  1956 pts/1	S+   14:54   0:00 tail -f ./lab
+akimovm+	5065  0.0  0.0  17912  2380 pts/0	S+   14:55   0:00 grep --color=auto tail
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ kill -15 5043
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ top | grep systemd
+	609 systemd+  20   0   16740   7292   6524 S   0,3   0,3   0:01.74
+
+
+
+
+
+
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo hello world | grep hello
+hello world
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ nano text.txt
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cat text.txt | grep 123
+123 text form txt file
+akimovmir@akimovmir-VMware-Virtual-Platform:~$
+

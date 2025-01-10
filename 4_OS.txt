@@ -1,0 +1,124 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ mkdir homework
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cd homework/
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ nano file1
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 12
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:18 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file1
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ cp file1 file2
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 16
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:18 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file1
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file2
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ln -s file1 file3
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ln file1 file4
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 20
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:19 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  2 akimovmir akimovmir   15 ноя 25 17:18 file1
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file2
+lrwxrwxrwx  1 akimovmir akimovmir    5 ноя 25 17:18 file3 -> file1
+-rw-rw-r--  2 akimovmir akimovmir   15 ноя 25 17:18 file4
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -il
+итого 12
+1576638 -rw-rw-r-- 2 akimovmir akimovmir 15 ноя 25 17:18 file1
+1576605 -rw-rw-r-- 1 akimovmir akimovmir 15 ноя 25 17:18 file2
+1576648 lrwxrwxrwx 1 akimovmir akimovmir  5 ноя 25 17:18 file3 -> file1
+1576638 -rw-rw-r-- 2 akimovmir akimovmir 15 ноя 25 17:18 file4
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ rm file1
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 16
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:19 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file2
+lrwxrwxrwx  1 akimovmir akimovmir    5 ноя 25 17:18 file3 -> file1
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file4
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 16
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:19 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file2
+lrwxrwxrwx  1 akimovmir akimovmir    5 ноя 25 17:18 file3 -> file1
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file4
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ mv file2 file20
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ mv file4 file40
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 16
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:20 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file20
+lrwxrwxrwx  1 akimovmir akimovmir    5 ноя 25 17:18 file3 -> file1
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file40
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ln -s file20 link_file20
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ln -s file40 link_file40
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 16
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:21 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file20
+lrwxrwxrwx  1 akimovmir akimovmir    5 ноя 25 17:18 file3 -> file1
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file40
+lrwxrwxrwx  1 akimovmir akimovmir    6 ноя 25 17:21 link_file20 -> file20
+lrwxrwxrwx  1 akimovmir akimovmir    6 ноя 25 17:21 link_file40 -> file40
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ mkdir links
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ mv link*
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ ls -al
+итого 20
+drwxrwxr-x  3 akimovmir akimovmir 4096 ноя 25 17:22 .
+drwxr-x--- 18 akimovmir akimovmir 4096 ноя 25 17:17 ..
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file20
+lrwxrwxrwx  1 akimovmir akimovmir    5 ноя 25 17:18 file3 -> file1
+-rw-rw-r--  1 akimovmir akimovmir   15 ноя 25 17:18 file40
+drwxrwxr-x  2 akimovmir akimovmir 4096 ноя 25 17:22 links
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework$ cd links/
+akimovmir@akimovmir-VMware-Virtual-Platform:~/homework/links$ ls -al
+итого 8
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 25 17:22 .
+drwxrwxr-x 3 akimovmir akimovmir 4096 ноя 25 17:22 ..
+lrwxrwxrwx 1 akimovmir akimovmir    6 ноя 25 17:21 link_file20 -> file20
+lrwxrwxrwx 1 akimovmir akimovmir    6 ноя 25 17:21 link_file40 -> file40
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ touch file1
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ touch file2
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l
+итого 64
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 13:09 1_OC
+drwxr-xr-x 3 akimovmir akimovmir 4096 ноя 15 07:18 Desktop
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Documents
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Downloads
+-rw-rw-r-- 1 akimovmir akimovmir 6095 ноя 25 16:56 errors.txt
+-rw-rw-r-- 1 akimovmir akimovmir    0 ноя 25 17:23 file1
+-rw-rw-r-- 1 akimovmir akimovmir    0 ноя 25 17:23 file2
+-rw-rw-r-- 1 akimovmir akimovmir   12 ноя 17 03:35 file.txt
+drwxrwxr-x 3 akimovmir akimovmir 4096 ноя 25 17:22 homework
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 13:26 Mir
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Music
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Pictures
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Public
+-rw-rw-r-- 1 akimovmir akimovmir    3 ноя 25 16:55 save.txt
+drwx------ 7 akimovmir akimovmir 4096 ноя 14 09:00 snap
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Templates
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ chmod go-rw file2
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l
+итого 64
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 13:09 1_OC
+drwxr-xr-x 3 akimovmir akimovmir 4096 ноя 15 07:18 Desktop
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Documents
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Downloads
+-rw-rw-r-- 1 akimovmir akimovmir 6095 ноя 25 16:56 errors.txt
+-rw-rw-r-- 1 akimovmir akimovmir    0 ноя 25 17:23 file1
+-rw------- 1 akimovmir akimovmir    0 ноя 25 17:23 file2
+-rw-rw-r-- 1 akimovmir akimovmir   12 ноя 17 03:35 file.txt
+drwxrwxr-x 3 akimovmir akimovmir 4096 ноя 25 17:22 homework
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 13:26 Mir
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Music
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Pictures
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Public
+-rw-rw-r-- 1 akimovmir akimovmir    3 ноя 25 16:55 save.txt
+drwx------ 7 akimovmir akimovmir 4096 ноя 14 09:00 snap
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Templates
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Videos

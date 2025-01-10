@@ -1,0 +1,1513 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ echo "hi" > save.txt
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+1_OC  Desktop  Documents  Downloads  file.txt  Mir  Music  Pictures  Public  save.txt  snap  Templates  Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cat save.txt
+hi
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cat /etc/* 2> errors.txt
+*** A LOT OF TEXT ***
+
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+1_OC     Documents  errors.txt  Mir    Pictures  save.txt  Templates
+Desktop  Downloads  file.txt    Music  Public    snap      Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cat errors.txt
+cat: /etc/alsa: Это каталог
+cat: /etc/alternatives: Это каталог
+cat: /etc/apm: Это каталог
+cat: /etc/apparmor: Это каталог
+cat: /etc/apparmor.d: Это каталог
+cat: /etc/apport: Это каталог
+cat: /etc/apt: Это каталог
+cat: /etc/avahi: Это каталог
+cat: /etc/bash_completion.d: Это каталог
+cat: /etc/binfmt.d: Это каталог
+cat: /etc/bluetooth: Это каталог
+cat: /etc/brlapi.key: Отказано в доступе
+cat: /etc/brltty: Это каталог
+cat: /etc/ca-certificates: Это каталог
+cat: /etc/chatscripts: Это каталог
+cat: /etc/cloud: Это каталог
+cat: /etc/colord: Это каталог
+cat: /etc/console-setup: Это каталог
+cat: /etc/cracklib: Это каталог
+cat: /etc/credstore: Отказано в доступе
+cat: /etc/credstore.encrypted: Отказано в доступе
+cat: /etc/cron.d: Это каталог
+cat: /etc/cron.daily: Это каталог
+cat: /etc/cron.hourly: Это каталог
+cat: /etc/cron.monthly: Это каталог
+cat: /etc/cron.weekly: Это каталог
+cat: /etc/cron.yearly: Это каталог
+cat: /etc/cups: Это каталог
+cat: /etc/cupshelpers: Это каталог
+cat: /etc/dbus-1: Это каталог
+cat: /etc/dconf: Это каталог
+cat: /etc/debuginfod: Это каталог
+cat: /etc/default: Это каталог
+cat: /etc/depmod.d: Это каталог
+cat: /etc/dhcp: Это каталог
+cat: /etc/dictionaries-common: Это каталог
+cat: /etc/dpkg: Это каталог
+cat: /etc/emacs: Это каталог
+cat: /etc/environment.d: Это каталог
+cat: /etc/fonts: Это каталог
+cat: /etc/fwupd: Это каталог
+cat: /etc/gdb: Это каталог
+cat: /etc/gdm3: Это каталог
+cat: /etc/geoclue: Это каталог
+cat: /etc/ghostscript: Это каталог
+cat: /etc/glvnd: Это каталог
+cat: /etc/gnome: Это каталог
+cat: /etc/gnome-remote-desktop: Это каталог
+cat: /etc/gnutls: Это каталог
+cat: /etc/groff: Это каталог
+cat: /etc/grub.d: Это каталог
+cat: /etc/gshadow: Отказано в доступе
+cat: /etc/gshadow-: Отказано в доступе
+cat: /etc/gss: Это каталог
+cat: /etc/gtk-2.0: Это каталог
+cat: /etc/gtk-3.0: Это каталог
+cat: /etc/hp: Это каталог
+cat: /etc/ifplugd: Это каталог
+cat: /etc/init: Это каталог
+cat: /etc/init.d: Это каталог
+cat: /etc/initramfs-tools: Это каталог
+cat: /etc/insserv.conf.d: Это каталог
+cat: /etc/ipp-usb: Это каталог
+cat: /etc/kdump: Это каталог
+cat: /etc/kernel: Это каталог
+cat: /etc/krb5.conf.d: Это каталог
+cat: /etc/ldap: Это каталог
+cat: /etc/ld.so.conf.d: Это каталог
+cat: /etc/libblockdev: Это каталог
+cat: /etc/libibverbs.d: Это каталог
+cat: /etc/libnl-3: Это каталог
+cat: /etc/libpaper.d: Это каталог
+cat: /etc/logcheck: Это каталог
+cat: /etc/logrotate.d: Это каталог
+cat: /etc/ModemManager: Это каталог
+cat: /etc/modprobe.d: Это каталог
+cat: /etc/modules-load.d: Это каталог
+cat: /etc/netplan: Это каталог
+cat: /etc/network: Это каталог
+cat: /etc/networkd-dispatcher: Это каталог
+cat: /etc/NetworkManager: Это каталог
+cat: /etc/newt: Это каталог
+cat: /etc/openvpn: Это каталог
+cat: /etc/opt: Это каталог
+cat: /etc/PackageKit: Это каталог
+cat: /etc/pam.d: Это каталог
+cat: /etc/pcmcia: Это каталог
+cat: /etc/perl: Это каталог
+cat: /etc/pki: Это каталог
+cat: /etc/plymouth: Это каталог
+cat: /etc/pm: Это каталог
+cat: /etc/polkit-1: Это каталог
+cat: /etc/ppp: Это каталог
+cat: /etc/profile.d: Это каталог
+cat: /etc/pulse: Это каталог
+cat: /etc/python3: Это каталог
+cat: /etc/python3.12: Это каталог
+cat: /etc/rc0.d: Это каталог
+cat: /etc/rc1.d: Это каталог
+cat: /etc/rc2.d: Это каталог
+cat: /etc/rc3.d: Это каталог
+cat: /etc/rc4.d: Это каталог
+cat: /etc/rc5.d: Это каталог
+cat: /etc/rc6.d: Это каталог
+cat: /etc/rcS.d: Это каталог
+cat: /etc/rsyslog.d: Это каталог
+cat: /etc/sane.d: Это каталог
+cat: /etc/security: Это каталог
+cat: /etc/selinux: Это каталог
+cat: /etc/sensors.d: Это каталог
+cat: /etc/sgml: Это каталог
+cat: /etc/shadow: Отказано в доступе
+cat: /etc/shadow-: Отказано в доступе
+cat: /etc/skel: Это каталог
+cat: /etc/snmp: Это каталог
+cat: /etc/speech-dispatcher: Это каталог
+cat: /etc/ssh: Это каталог
+cat: /etc/ssl: Это каталог
+cat: /etc/sssd: Отказано в доступе
+cat: /etc/sudoers: Отказано в доступе
+cat: /etc/sudoers.d: Это каталог
+cat: /etc/supercat: Это каталог
+cat: /etc/sysctl.d: Это каталог
+cat: /etc/sysstat: Это каталог
+cat: /etc/systemd: Это каталог
+cat: /etc/terminfo: Это каталог
+cat: /etc/thermald: Это каталог
+cat: /etc/tmpfiles.d: Это каталог
+cat: /etc/ubuntu-advantage: Это каталог
+cat: /etc/udev: Это каталог
+cat: /etc/udisks2: Это каталог
+cat: /etc/ufw: Это каталог
+cat: /etc/update-manager: Это каталог
+cat: /etc/update-motd.d: Это каталог
+cat: /etc/update-notifier: Это каталог
+cat: /etc/UPower: Это каталог
+cat: /etc/usb_modeswitch.d: Это каталог
+cat: /etc/vim: Это каталог
+cat: /etc/vulkan: Это каталог
+cat: /etc/wpa_supplicant: Это каталог
+cat: /etc/X11: Это каталог
+cat: /etc/xdg: Это каталог
+cat: /etc/xml: Это каталог
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l | cut -c 1-10 | sort | uniq
+drwx------
+drwxrwxr-x
+drwxr-xr-x
+-rw-rw-r--
+итого
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l
+итого 60
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 13:09 1_OC
+drwxr-xr-x 3 akimovmir akimovmir 4096 ноя 15 07:18 Desktop
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Documents
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Downloads
+-rw-rw-r-- 1 akimovmir akimovmir 6095 ноя 25 16:56 errors.txt
+-rw-rw-r-- 1 akimovmir akimovmir   12 ноя 17 03:35 file.txt
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 13:26 Mir
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Music
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Pictures
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Public
+-rw-rw-r-- 1 akimovmir akimovmir    3 ноя 25 16:55 save.txt
+drwx------ 7 akimovmir akimovmir 4096 ноя 14 09:00 snap
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Templates
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo -i
+[sudo] пароль для akimovmir:
+root@akimovmir-VMware-Virtual-Platform:~# nano /etc/ssh/sshd_config
+#PasswordAuthentication yes->no
+root@akimovmir-VMware-Virtual-Platform:~# service sshd restart
+root@akimovmir-VMware-Virtual-Platform:~# service sshd reload
+root@akimovmir-VMware-Virtual-Platform:~# nano /etc/ssh/sshd_config
+#PasswordAuthentication no->yes
+
+restart is for powering off the utility and killing all connections
+reload is just for 'reloading' configuration
+
+root@akimovmir-VMware-Virtual-Platform:~# cat > newfile.txt
+hi nice to meet you
+root@akimovmir-VMware-Virtual-Platform:~# cat  newfile.txt
+hi nice to meet you
+root@akimovmir-VMware-Virtual-Platform:~# top
+top - 17:08:01 up 46 min,  3 users,  load average: 0,02, 0,03, 0,22
+Задачи: 304 total,   1 running, 303 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0,0 us,  0,3 sy,  0,0 ni, 99,7 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+МиБ Mem :   2568,6 total,    816,1 free,   1081,6 used,    905,0 buff/cache
+МиБ Swap:   2888,0 total,   2651,4 free,    236,5 used.   1487,0 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ КОМАНДА
+    586 systemd+  20   0   16912   6768   6512 S   1,4   0,3   0:01.62 systemd-oomd
+   5605 akimovm+  20   0   16636   6920   4960 S   1,4   0,3   0:03.86 sshd
+   2363 akimovm+  20   0 3869636 199932  65048 S   0,7   7,6   2:39.14 gnome-shell
+   6252 root      20   0       0      0      0 I   0,7   0,0   0:00.25 kworker/1:0-events
+   6280 root      20   0   20804   5408   3360 R   0,7   0,2   0:00.19 top
+      1 root      20   0   23580  14916  10052 S   0,0   0,6   0:06.72 systemd
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.06 kthreadd
+      3 root      20   0       0      0      0 S   0,0   0,0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-slub_flushwq
+      7 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-netns
+     10 root       0 -20       0      0      0 I   0,0   0,0   0:00.30 kworker/0:0H-kblockd
+     11 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/u512:0-ipv6_addrconf
+     12 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-mm_percpu_wq
+     13 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_kthread
+     14 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_rude_kthread
+     15 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_trace_kthread
+     16 root      20   0       0      0      0 S   0,0   0,0   0:00.32 ksoftirqd/0
+     17 root      20   0       0      0      0 I   0,0   0,0   0:01.80 rcu_preempt
+     18 root      20   0       0      0      0 S   0,0   0,0   0:00.03 rcu_exp_par_gp_kthread_worker/1
+     19 root      20   0       0      0      0 S   0,0   0,0   0:00.04 rcu_exp_gp_kthread_worker
+     20 root      rt   0       0      0      0 S   0,0   0,0   0:00.08 migration/0
+root@akimovmir-VMware-Virtual-Platform:~# ps
+    PID TTY          TIME CMD
+   6104 pts/1    00:00:00 sudo
+   6105 pts/1    00:00:00 bash
+   6282 pts/1    00:00:00 ps
+root@akimovmir-VMware-Virtual-Platform:~# ps 1
+    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     0:06 /sbin/init splash
+root@akimovmir-VMware-Virtual-Platform:~# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.5  23580 14916 ?        Ss   16:21   0:06 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    16:21   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    16:21   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-slub_flushwq]
+root           7  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/0:0H-kblockd]
+root          11  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:0-ipv6_addrconf]
+root          12  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mm_percpu_wq]
+root          13  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        R    16:21   0:01 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_par_gp_kthread_worker/1]
+root          19  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_gp_kthread_worker]
+root          20  0.0  0.0      0     0 ?        S    16:21   0:00 [migration/0]
+root          21  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/0]
+root          22  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/0]
+root          23  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/1]
+root          24  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/1]
+root          25  0.0  0.0      0     0 ?        S    16:21   0:01 [migration/1]
+root          26  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/1]
+root          31  0.0  0.0      0     0 ?        S    16:21   0:00 [kdevtmpfs]
+root          32  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-inet_frag_wq]
+root          34  0.0  0.0      0     0 ?        S    16:21   0:00 [kauditd]
+root          35  0.0  0.0      0     0 ?        S    16:21   0:00 [khungtaskd]
+root          36  0.0  0.0      0     0 ?        S    16:21   0:00 [oom_reaper]
+root          38  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-writeback]
+root          39  0.0  0.0      0     0 ?        S    16:21   0:02 [kcompactd0]
+root          40  0.0  0.0      0     0 ?        SN   16:21   0:00 [ksmd]
+root          41  0.0  0.0      0     0 ?        SN   16:21   0:00 [khugepaged]
+root          42  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kintegrityd]
+root          43  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kblockd]
+root          44  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-blkcg_punt_bio]
+root          45  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/9-acpi]
+root          47  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-tpm_dev_wq]
+root          48  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ata_sff]
+root          49  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md]
+root          50  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md_bitmap]
+root          51  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-edac-poller]
+root          52  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-devfreq_wq]
+root          54  0.0  0.0      0     0 ?        S    16:21   0:00 [watchdogd]
+root          56  0.2  0.0      0     0 ?        S    16:21   0:05 [kswapd0]
+root          57  0.0  0.0      0     0 ?        S    16:21   0:00 [ecryptfs-kthread]
+root          58  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kthrotld]
+root          59  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/24-pciehp]
+root          60  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/25-pciehp]
+root          61  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/26-pciehp]
+root          62  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/27-pciehp]
+root          63  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/28-pciehp]
+root          64  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/29-pciehp]
+root          65  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/30-pciehp]
+root          66  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/31-pciehp]
+root          67  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/32-pciehp]
+root          68  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/33-pciehp]
+root          69  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/34-pciehp]
+root          70  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/35-pciehp]
+root          71  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/36-pciehp]
+root          72  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/37-pciehp]
+root          73  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/38-pciehp]
+root          74  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/39-pciehp]
+root          75  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/40-pciehp]
+root          76  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/41-pciehp]
+root          77  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/42-pciehp]
+root          78  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/43-pciehp]
+root          79  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/44-pciehp]
+root          80  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/45-pciehp]
+root          81  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/46-pciehp]
+root          82  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/47-pciehp]
+root          83  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/48-pciehp]
+root          84  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/49-pciehp]
+root          85  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/50-pciehp]
+root          86  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/51-pciehp]
+root          87  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/52-pciehp]
+root          88  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/53-pciehp]
+root          89  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/54-pciehp]
+root          90  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/55-pciehp]
+root          91  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-acpi_thermal_pm]
+root          92  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_0]
+root          93  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_0]
+root          94  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_1]
+root          95  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_1]
+root         100  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mld]
+root         102  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ipv6_addrconf]
+root         103  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:1-ipv6_addrconf]
+root         110  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kstrp]
+root         112  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:0-hci0]
+root         127  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-charger_manager]
+root         175  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt_poll_0]
+root         176  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt/0]
+root         177  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_2]
+root         178  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_2]
+root         179  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_3]
+root         180  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_3]
+root         181  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_4]
+root         182  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_4]
+root         183  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_5]
+root         184  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_5]
+root         185  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_6]
+root         186  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_6]
+root         194  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_7]
+root         195  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_7]
+root         196  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_8]
+root         198  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_8]
+root         199  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_9]
+root         202  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_9]
+root         204  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_10]
+root         207  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_10]
+root         210  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_11]
+root         211  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_11]
+root         212  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_12]
+root         213  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_12]
+root         214  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_13]
+root         216  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_13]
+root         217  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_14]
+root         218  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_14]
+root         219  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_15]
+root         220  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_15]
+root         221  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_16]
+root         222  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_16]
+root         223  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_17]
+root         224  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_17]
+root         225  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_18]
+root         226  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_18]
+root         227  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_19]
+root         228  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_19]
+root         229  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_20]
+root         230  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_20]
+root         231  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_21]
+root         232  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_21]
+root         233  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_22]
+root         234  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_22]
+root         235  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_23]
+root         236  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_23]
+root         237  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_24]
+root         238  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_24]
+root         239  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_25]
+root         240  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_25]
+root         241  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_26]
+root         242  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_26]
+root         243  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_27]
+root         244  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_27]
+root         245  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_28]
+root         246  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_28]
+root         247  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_29]
+root         248  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_29]
+root         249  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_30]
+root         250  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_30]
+root         251  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_31]
+root         252  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_31]
+root         253  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_32]
+root         254  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_32]
+root         276  0.0  0.0      0     0 ?        I    16:21   0:01 [kworker/u514:26-flush-8:0]
+root         326  0.0  0.0      0     0 ?        S    16:21   0:00 [jbd2/sda2-8]
+root         327  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ext4-rsv-conversion]
+root         372  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/57-vmw_vmci]
+root         373  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/58-vmw_vmci]
+root         374  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/59-vmw_vmci]
+root         382  0.0  0.7  49864 18488 ?        S<s  16:21   0:01 /usr/lib/systemd/systemd-journald
+root         422  0.0  0.3  33136  8584 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-udevd
+root         446  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+systemd+     586  0.0  0.2  16912  6768 ?        Ss   16:21   0:01 /usr/lib/systemd/systemd-oomd
+systemd+     589  0.0  0.4  21308 13116 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     592  0.0  0.2  90228  7028 ?        Ssl  16:21   0:00 /usr/lib/systemd/systemd-timesyncd
+root         694  1.1  0.0      0     0 ?        S    16:21   0:31 [irq/16-vmwgfx]
+root         697  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ttm]
+avahi        753  0.0  0.1   6224  3940 ?        Ss   16:21   0:00 avahi-daemon: running [akimovmir-VMware-Virtual-Platf
+message+     754  0.0  0.2   9848  6668 ?        Ss   16:21   0:01 @dbus-daemon --system --address=systemd: --nofork --n
+gnome-r+     759  0.0  0.4 516216 12652 ?        Ssl  16:21   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      764  0.0  0.3 397252  9940 ?        Ssl  16:21   0:02 /usr/lib/polkit-1/polkitd --no-debug
+root         771  0.0  0.9 1844736 24468 ?       Ssl  16:21   0:02 /usr/lib/snapd/snapd
+root         776  0.0  0.2 320056  7812 ?        Ssl  16:21   0:00 /usr/libexec/accounts-daemon
+root         780  0.0  0.1  18192  2864 ?        Ss   16:21   0:00 /usr/sbin/cron -f -P
+root         785  0.0  0.2 319064  6980 ?        Ssl  16:21   0:00 /usr/libexec/switcheroo-control
+root         792  0.0  0.3  17512  7956 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-logind
+root         793  0.0  0.4 542716 11764 ?        Ssl  16:21   0:00 /usr/libexec/udisks2/udisksd
+syslog       810  0.0  0.1 220144  4360 ?        Ssl  16:21   0:00 /usr/sbin/rsyslogd -n -iNONE
+avahi        823  0.0  0.0   6036  1244 ?        S    16:21   0:00 avahi-daemon: chroot helper
+root         828  0.0  0.7 345052 19188 ?        Ssl  16:21   0:00 /usr/sbin/NetworkManager --no-daemon
+root         832  0.0  0.1  16472  4036 ?        Ss   16:21   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_suppli
+root         874  0.0  0.2 389864  7544 ?        Ssl  16:21   0:00 /usr/sbin/ModemManager
+root         953  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:2-hci0]
+root        1081  0.0  0.0      0     0 ?        I    16:21   0:01 [kworker/u513:5-events_unbound]
+root        1084  0.0  0.4 121776 11460 ?        Ssl  16:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root        1120  0.0  0.3 321672  8796 ?        Ssl  16:21   0:00 /usr/sbin/gdm3
+root        1132  0.0  0.1  12100  4960 ?        Ss   16:21   0:00 /usr/libexec/bluetooth/bluetoothd
+root        1166  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-cryptd]
+root        1272  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+rtkit       1384  0.0  0.1  20480  3016 ?        SNsl 16:21   0:00 /usr/libexec/rtkit-daemon
+colord      1641  0.0  0.5 326924 14028 ?        Ssl  16:21   0:00 /usr/libexec/colord
+root        1685  0.0  0.3 327424  8312 ?        Ssl  16:21   0:00 /usr/libexec/upowerd
+root        2020  0.0  0.2 320388  7212 ?        Ssl  16:21   0:00 /usr/libexec/power-profiles-daemon
+root        2064  0.0  0.4 397004 11072 ?        Sl   16:22   0:00 gdm-session-worker [pam/gdm-password]
+akimovm+    2078  0.0  0.4  21524 12712 ?        Ss   16:22   0:02 /usr/lib/systemd/systemd --user
+akimovm+    2085  0.0  0.0  20636  1904 ?        S    16:22   0:00 (sd-pam)
+akimovm+    2102  1.2  0.2 180768  7648 ?        S<sl 16:22   0:34 /usr/bin/pipewire
+akimovm+    2105  0.0  0.1  95572  4520 ?        Ssl  16:22   0:00 /usr/bin/pipewire -c filter-chain.conf
+akimovm+    2111  0.0  0.4 490528 12816 ?        S<sl 16:22   0:00 /usr/bin/wireplumber
+akimovm+    2114  0.0  0.3 188964  9876 ?        S<sl 16:22   0:00 /usr/bin/pipewire-pulse
+akimovm+    2115  0.0  0.3 324976  8640 ?        SLsl 16:22   0:00 /usr/bin/gnome-keyring-daemon --foreground --componen
+akimovm+    2124  0.0  0.2   8720  6280 ?        Ss   16:22   0:01 /usr/bin/dbus-daemon --session --address=systemd: --n
+akimovm+    2137  0.0  0.2 691808  7168 ?        Ssl  16:22   0:00 /usr/libexec/xdg-document-portal
+akimovm+    2161  0.0  0.2 318712  6488 ?        Ssl  16:22   0:00 /usr/libexec/xdg-permission-store
+root        2168  0.0  0.0   2768  1884 ?        Ss   16:22   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unm
+akimovm+    2179  0.0  0.2 244976  6408 tty2     Ssl+ 16:22   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESS
+akimovm+    2192  0.0  0.4 305200 11712 tty2     Sl+  16:22   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+akimovm+    2269  0.0  0.2 162172  6320 ?        Ssl  16:22   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/
+akimovm+    2271  0.0  0.2  97904  5268 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-ctl --monitor
+akimovm+    2294  0.0  0.2 397716  7660 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd
+akimovm+    2310  0.0  0.2 468988  6964 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+akimovm+    2312  0.0  0.5 675532 13240 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-binary --systemd-service -
+akimovm+    2363  5.6  7.5 3869636 199576 ?      Ssl  16:22   2:39 /usr/bin/gnome-shell
+akimovm+    2366  0.0  0.2 380644  7008 ?        Sl   16:22   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+akimovm+    2379  0.0  0.1   7212  4532 ?        S    16:22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/default
+akimovm+    2425  0.0  0.2 233768  6616 ?        Sl   16:22   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+akimovm+    2460  0.0  0.5 655436 14424 ?        Sl   16:22   0:00 /usr/libexec/gnome-shell-calendar-server
+akimovm+    2472  0.0  1.6 764584 43652 ?        Ssl  16:22   0:00 /usr/libexec/evolution-source-registry
+akimovm+    2481  0.0  0.5 2741140 14208 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shel
+akimovm+    2483  0.0  0.3 398008  8412 ?        Ssl  16:22   0:01 /usr/bin/ibus-daemon --panel disable
+akimovm+    2484  0.0  0.2 392940  7072 ?        Ssl  16:22   0:00 /usr/libexec/gsd-a11y-settings
+akimovm+    2485  0.0  0.5 420688 13188 ?        Ssl  16:22   0:00 /usr/libexec/gsd-color
+akimovm+    2486  0.0  0.3 438532  9272 ?        Ssl  16:22   0:00 /usr/libexec/gsd-datetime
+akimovm+    2487  0.0  0.3 468308  8124 ?        Ssl  16:22   0:00 /usr/libexec/gsd-housekeeping
+akimovm+    2488  0.0  0.4 419460 13052 ?        Ssl  16:22   0:00 /usr/libexec/gsd-keyboard
+akimovm+    2489  0.0  0.5 752292 15176 ?        Ssl  16:22   0:00 /usr/libexec/gsd-media-keys
+akimovm+    2490  0.0  0.5 531164 15296 ?        Ssl  16:22   0:00 /usr/libexec/gsd-power
+akimovm+    2495  0.0  0.3 330328 10156 ?        Ssl  16:22   0:00 /usr/libexec/gsd-print-notifications
+akimovm+    2497  0.0  0.2 540580  6568 ?        Ssl  16:22   0:00 /usr/libexec/gsd-rfkill
+akimovm+    2500  0.0  0.2 318704  6100 ?        Ssl  16:22   0:00 /usr/libexec/gsd-screensaver-proxy
+akimovm+    2502  0.0  0.3 550264  9604 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sharing
+akimovm+    2503  0.0  0.2 395252  7728 ?        Ssl  16:22   0:00 /usr/libexec/gsd-smartcard
+akimovm+    2505  0.0  0.3 403624  8268 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sound
+akimovm+    2507  0.0  0.5 494524 13384 ?        Ssl  16:22   0:00 /usr/libexec/gsd-wacom
+akimovm+    2518  0.0  0.2 305860  7520 ?        Sl   16:22   0:00 /usr/libexec/gsd-disk-utility-notify
+akimovm+    2519  0.0  2.0 996368 54124 ?        Sl   16:22   0:00 /usr/libexec/evolution-data-server/evolution-alarm-no
+akimovm+    2560  0.0  0.5 256804 14364 ?        S    16:22   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -cor
+akimovm+    2629  0.0  0.2  39128  7556 ?        Ss   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2656  0.0  0.4 423104 11844 ?        Sl   16:22   0:00 /usr/libexec/gsd-printer
+akimovm+    2681  0.0  0.3 619244 10216 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+akimovm+    2731  0.0  0.2 245940  7088 ?        Sl   16:22   0:00 /usr/libexec/ibus-memconf
+akimovm+    2734  0.1  0.8 428480 22748 ?        Sl   16:22   0:03 /usr/libexec/ibus-extension-gtk3
+akimovm+    2739  0.0  0.6 556428 16748 ?        Sl   16:22   0:00 /usr/libexec/goa-daemon
+akimovm+    2743  0.0  0.2 319540  7340 ?        Sl   16:22   0:00 /usr/libexec/ibus-portal
+akimovm+    2768  0.0  0.5 429596 13880 ?        Sl   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2778  0.0  0.8 900444 21048 ?        Ssl  16:22   0:00 /usr/libexec/evolution-calendar-factory
+akimovm+    2784  0.0  0.2 399884  7776 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-afc-volume-monitor
+akimovm+    2801  0.0  0.3 398808  8544 ?        Sl   16:22   0:00 /usr/libexec/goa-identity-service
+akimovm+    2814  0.0  0.2 318940  6696 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+akimovm+    2820  0.0  0.2 319892  6796 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+akimovm+    2829  0.0  0.9 762364 25812 ?        Ssl  16:22   0:00 /usr/libexec/evolution-addressbook-factory
+akimovm+    2834  0.0  0.2 318876  6464 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-goa-volume-monitor
+akimovm+    2877  0.0  0.2 246064  7888 ?        Sl   16:22   0:00 /usr/libexec/ibus-engine-simple
+akimovm+    2883  0.0  0.2 230436  5644 ?        Ssl  16:22   0:00 /usr/libexec/dconf-service
+akimovm+    2909  0.0  0.2 245572  6680 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd-metadata
+akimovm+    2910  0.0  0.3 545588  9328 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvf
+akimovm+    2950  0.0  0.6 2741128 18320 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Scre
+akimovm+    2979  0.0  1.0 819740 28220 ?        SNsl 16:22   0:01 /usr/libexec/tracker-miner-fs-3
+akimovm+    2980  0.0  0.5 710488 14804 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal
+akimovm+    2986  0.0  1.2 1086180 31748 ?       Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gnome
+akimovm+    2995  0.0  0.9 649052 26132 ?        Ssl  16:22   0:00 /usr/libexec/gsd-xsettings
+root        3059  0.0  0.0      0     0 ?        I<   16:22   0:00 [kworker/u516:9-ttm]
+akimovm+    3095  0.0  0.7 274636 19792 ?        Sl   16:22   0:00 /usr/libexec/ibus-x11
+akimovm+    3100  0.0  1.6 752356 43440 ?        Sl   16:22   0:00 /usr/libexec/mutter-x11-frames
+akimovm+    3124  0.0  0.7 425388 19200 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gtk
+akimovm+    3231  0.1  1.7 634316 46676 ?        Ssl  16:23   0:03 /usr/libexec/gnome-terminal-server
+akimovm+    3238  0.0  0.1  20380  3844 pts/0    Ss+  16:23   0:00 bash
+akimovm+    3252  0.0  0.9 499688 23776 ?        Sl   16:23   0:00 /usr/bin/update-notifier
+root        3710  0.0  0.2  13308  7152 ?        Ss   16:30   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startu
+root        3835  0.0  0.0      0     0 ?        I<   16:31   0:00 [kworker/R-tls-strp]
+akimovm+    3922  0.0  0.3 397948  8116 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-recent --spawner :1.19 /org/gtk/gv
+akimovm+    3925  0.0  0.3 398184  8256 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-network --spawner :1.19 /org/gtk/g
+akimovm+    3940  0.0  0.3 399188  8120 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.19 /org/gtk/gvf
+akimovm+    3946  0.0  0.3 397748  8088 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-wsdd --spawner :1.19 /org/gtk/gvfs
+akimovm+    3951  0.0  0.8  53032 22880 ?        S    16:32   0:00 python3 /usr/bin/wsdd --no-host --discovery --listen
+root        3981  0.1  0.0      0     0 ?        I    16:32   0:02 [kworker/u514:0-events_unbound]
+root        3987  0.0  0.0      0     0 ?        I<   16:32   0:00 [kworker/1:1H-kblockd]
+akimovm+    4314  0.0  0.4 1762864 13064 ?       Sl   16:34   0:00 /usr/bin/snap userd
+root        4934  0.0  0.0      0     0 ?        I<   16:36   0:00 [kworker/0:2H-kblockd]
+root        4944  0.0  0.0      0     0 ?        I    16:36   0:00 [kworker/u513:1-events_power_efficient]
+root        5235  0.2  0.0      0     0 ?        I    16:44   0:03 [kworker/1:1-events_freezable]
+root        5561  0.0  0.4  16496 10944 ?        Ss   16:47   0:00 sshd: akimovmir [priv]
+akimovm+    5605  0.3  0.2  16636  6920 ?        S    16:47   0:03 sshd: akimovmir@pts/2
+akimovm+    5606  0.0  0.2  20584  5972 pts/2    Ss   16:47   0:00 -bash
+root        5776  0.0  0.0      0     0 ?        I    16:49   0:00 [kworker/1:2-events]
+root        5797  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u514:2-flush-8:0]
+root        5828  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u513:2-events_unbound]
+root        5891  0.0  0.0      0     0 ?        I    16:51   0:01 [kworker/0:1-events]
+root        5895  0.0  0.0      0     0 ?        I<   16:51   0:00 [kworker/u517:7-ttm]
+root        5923  0.0  0.4  44376 11448 ?        Ss   16:53   0:00 /usr/sbin/cupsd -l
+cups-br+    5924  0.0  0.7 267708 19868 ?        Ssl  16:53   0:00 /usr/sbin/cups-browsed
+root        6087  0.0  0.0      0     0 ?        I    16:56   0:00 [kworker/0:0-events]
+root        6103  0.0  0.3  30044  8388 pts/2    S+   16:58   0:00 sudo -i
+root        6104  0.0  0.0  30044  2596 pts/1    Ss   16:58   0:00 sudo -i
+root        6105  0.0  0.2  20408  5764 pts/1    S    16:58   0:00 -bash
+root        6125  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u517:0-ttm]
+root        6133  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u516:0-ttm]
+root        6142  0.0  0.0      0     0 ?        I<   17:00   0:00 [kworker/1:2H]
+root        6246  0.1  0.0      0     0 ?        I    17:02   0:00 [kworker/0:2-events]
+root        6252  0.1  0.0      0     0 ?        I    17:03   0:00 [kworker/1:0-events]
+root        6256  0.0  0.0      0     0 ?        I    17:05   0:00 [kworker/u514:1-events_unbound]
+root        6281  0.0  0.0      0     0 ?        I    17:07   0:00 [kworker/u513:0-events_unbound]
+root        6284  0.0  0.1  20024  4228 pts/1    R+   17:08   0:00 ps aux
+root@akimovmir-VMware-Virtual-Platform:~# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.5  23580 14916 ?        Ss   16:21   0:06 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    16:21   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    16:21   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-slub_flushwq]
+root           7  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/0:0H-kblockd]
+root          11  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:0-ipv6_addrconf]
+root          12  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mm_percpu_wq]
+root          13  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    16:21   0:01 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_par_gp_kthread_worker/1]
+root          19  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_gp_kthread_worker]
+root          20  0.0  0.0      0     0 ?        S    16:21   0:00 [migration/0]
+root          21  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/0]
+root          22  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/0]
+root          23  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/1]
+root          24  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/1]
+root          25  0.0  0.0      0     0 ?        S    16:21   0:01 [migration/1]
+root          26  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/1]
+root          31  0.0  0.0      0     0 ?        S    16:21   0:00 [kdevtmpfs]
+root          32  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-inet_frag_wq]
+root          34  0.0  0.0      0     0 ?        S    16:21   0:00 [kauditd]
+root          35  0.0  0.0      0     0 ?        S    16:21   0:00 [khungtaskd]
+root          36  0.0  0.0      0     0 ?        S    16:21   0:00 [oom_reaper]
+root          38  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-writeback]
+root          39  0.0  0.0      0     0 ?        S    16:21   0:02 [kcompactd0]
+root          40  0.0  0.0      0     0 ?        SN   16:21   0:00 [ksmd]
+root          41  0.0  0.0      0     0 ?        SN   16:21   0:00 [khugepaged]
+root          42  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kintegrityd]
+root          43  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kblockd]
+root          44  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-blkcg_punt_bio]
+root          45  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/9-acpi]
+root          47  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-tpm_dev_wq]
+root          48  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ata_sff]
+root          49  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md]
+root          50  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md_bitmap]
+root          51  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-edac-poller]
+root          52  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-devfreq_wq]
+root          54  0.0  0.0      0     0 ?        S    16:21   0:00 [watchdogd]
+root          56  0.1  0.0      0     0 ?        S    16:21   0:05 [kswapd0]
+root          57  0.0  0.0      0     0 ?        S    16:21   0:00 [ecryptfs-kthread]
+root          58  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kthrotld]
+root          59  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/24-pciehp]
+root          60  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/25-pciehp]
+root          61  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/26-pciehp]
+root          62  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/27-pciehp]
+root          63  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/28-pciehp]
+root          64  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/29-pciehp]
+root          65  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/30-pciehp]
+root          66  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/31-pciehp]
+root          67  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/32-pciehp]
+root          68  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/33-pciehp]
+root          69  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/34-pciehp]
+root          70  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/35-pciehp]
+root          71  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/36-pciehp]
+root          72  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/37-pciehp]
+root          73  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/38-pciehp]
+root          74  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/39-pciehp]
+root          75  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/40-pciehp]
+root          76  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/41-pciehp]
+root          77  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/42-pciehp]
+root          78  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/43-pciehp]
+root          79  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/44-pciehp]
+root          80  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/45-pciehp]
+root          81  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/46-pciehp]
+root          82  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/47-pciehp]
+root          83  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/48-pciehp]
+root          84  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/49-pciehp]
+root          85  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/50-pciehp]
+root          86  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/51-pciehp]
+root          87  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/52-pciehp]
+root          88  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/53-pciehp]
+root          89  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/54-pciehp]
+root          90  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/55-pciehp]
+root          91  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-acpi_thermal_pm]
+root          92  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_0]
+root          93  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_0]
+root          94  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_1]
+root          95  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_1]
+root         100  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mld]
+root         102  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ipv6_addrconf]
+root         103  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:1-ipv6_addrconf]
+root         110  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kstrp]
+root         112  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:0-hci0]
+root         127  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-charger_manager]
+root         175  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt_poll_0]
+root         176  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt/0]
+root         177  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_2]
+root         178  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_2]
+root         179  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_3]
+root         180  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_3]
+root         181  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_4]
+root         182  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_4]
+root         183  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_5]
+root         184  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_5]
+root         185  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_6]
+root         186  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_6]
+root         194  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_7]
+root         195  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_7]
+root         196  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_8]
+root         198  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_8]
+root         199  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_9]
+root         202  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_9]
+root         204  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_10]
+root         207  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_10]
+root         210  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_11]
+root         211  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_11]
+root         212  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_12]
+root         213  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_12]
+root         214  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_13]
+root         216  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_13]
+root         217  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_14]
+root         218  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_14]
+root         219  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_15]
+root         220  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_15]
+root         221  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_16]
+root         222  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_16]
+root         223  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_17]
+root         224  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_17]
+root         225  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_18]
+root         226  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_18]
+root         227  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_19]
+root         228  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_19]
+root         229  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_20]
+root         230  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_20]
+root         231  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_21]
+root         232  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_21]
+root         233  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_22]
+root         234  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_22]
+root         235  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_23]
+root         236  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_23]
+root         237  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_24]
+root         238  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_24]
+root         239  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_25]
+root         240  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_25]
+root         241  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_26]
+root         242  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_26]
+root         243  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_27]
+root         244  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_27]
+root         245  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_28]
+root         246  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_28]
+root         247  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_29]
+root         248  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_29]
+root         249  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_30]
+root         250  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_30]
+root         251  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_31]
+root         252  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_31]
+root         253  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_32]
+root         254  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_32]
+root         276  0.0  0.0      0     0 ?        I    16:21   0:01 [kworker/u514:26-events_unbound]
+root         326  0.0  0.0      0     0 ?        S    16:21   0:00 [jbd2/sda2-8]
+root         327  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ext4-rsv-conversion]
+root         372  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/57-vmw_vmci]
+root         373  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/58-vmw_vmci]
+root         374  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/59-vmw_vmci]
+root         382  0.0  0.7  49864 18616 ?        S<s  16:21   0:01 /usr/lib/systemd/systemd-journald
+root         422  0.0  0.3  33136  8584 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-udevd
+root         446  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+systemd+     586  0.0  0.2  16912  6768 ?        Ss   16:21   0:01 /usr/lib/systemd/systemd-oomd
+systemd+     589  0.0  0.4  21308 13116 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     592  0.0  0.2  90228  7028 ?        Ssl  16:21   0:00 /usr/lib/systemd/systemd-timesyncd
+root         694  1.0  0.0      0     0 ?        S    16:21   0:31 [irq/16-vmwgfx]
+root         697  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ttm]
+avahi        753  0.0  0.1   6224  3940 ?        Ss   16:21   0:00 avahi-daemon: running [akimovmir-VMware-Virtual-Platf
+message+     754  0.0  0.2   9848  6668 ?        Ss   16:21   0:02 @dbus-daemon --system --address=systemd: --nofork --n
+gnome-r+     759  0.0  0.4 516216 12652 ?        Ssl  16:21   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      764  0.0  0.3 397252 10068 ?        Ssl  16:21   0:02 /usr/lib/polkit-1/polkitd --no-debug
+root         771  0.0  1.0 1844736 27452 ?       Ssl  16:21   0:02 /usr/lib/snapd/snapd
+root         776  0.0  0.2 320056  7812 ?        Ssl  16:21   0:00 /usr/libexec/accounts-daemon
+root         780  0.0  0.1  18192  2864 ?        Ss   16:21   0:00 /usr/sbin/cron -f -P
+root         785  0.0  0.2 319064  6980 ?        Ssl  16:21   0:00 /usr/libexec/switcheroo-control
+root         792  0.0  0.3  17512  7956 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-logind
+root         793  0.0  0.4 542716 12020 ?        Ssl  16:21   0:00 /usr/libexec/udisks2/udisksd
+syslog       810  0.0  0.1 220144  4360 ?        Ssl  16:21   0:00 /usr/sbin/rsyslogd -n -iNONE
+avahi        823  0.0  0.0   6036  1244 ?        S    16:21   0:00 avahi-daemon: chroot helper
+root         828  0.0  0.7 345052 19188 ?        Ssl  16:21   0:00 /usr/sbin/NetworkManager --no-daemon
+root         832  0.0  0.1  16472  4036 ?        Ss   16:21   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_suppli
+root         874  0.0  0.2 389864  7544 ?        Ssl  16:21   0:00 /usr/sbin/ModemManager
+root         953  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:2-hci0]
+root        1081  0.0  0.0      0     0 ?        I    16:21   0:01 [kworker/u513:5-writeback]
+root        1084  0.0  0.4 121776 11460 ?        Ssl  16:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root        1120  0.0  0.3 321672  8796 ?        Ssl  16:21   0:00 /usr/sbin/gdm3
+root        1132  0.0  0.1  12100  4960 ?        Ss   16:21   0:00 /usr/libexec/bluetooth/bluetoothd
+root        1166  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-cryptd]
+root        1272  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+rtkit       1384  0.0  0.1  20480  3016 ?        SNsl 16:21   0:00 /usr/libexec/rtkit-daemon
+colord      1641  0.0  0.5 326924 14028 ?        Ssl  16:21   0:00 /usr/libexec/colord
+root        1685  0.0  0.3 327424  8312 ?        Ssl  16:21   0:00 /usr/libexec/upowerd
+root        2020  0.0  0.2 320388  7212 ?        Ssl  16:21   0:00 /usr/libexec/power-profiles-daemon
+root        2064  0.0  0.4 397004 11072 ?        Sl   16:22   0:00 gdm-session-worker [pam/gdm-password]
+akimovm+    2078  0.0  0.4  21524 12712 ?        Ss   16:22   0:02 /usr/lib/systemd/systemd --user
+akimovm+    2085  0.0  0.0  20636  1904 ?        S    16:22   0:00 (sd-pam)
+akimovm+    2102  1.2  0.2 180768  7648 ?        S<sl 16:22   0:34 /usr/bin/pipewire
+akimovm+    2105  0.0  0.1  95572  4520 ?        Ssl  16:22   0:00 /usr/bin/pipewire -c filter-chain.conf
+akimovm+    2111  0.0  0.4 490528 12816 ?        S<sl 16:22   0:00 /usr/bin/wireplumber
+akimovm+    2114  0.0  0.3 188964  9876 ?        S<sl 16:22   0:00 /usr/bin/pipewire-pulse
+akimovm+    2115  0.0  0.3 324976  8768 ?        SLsl 16:22   0:00 /usr/bin/gnome-keyring-daemon --foreground --componen
+akimovm+    2124  0.0  0.2   8720  6408 ?        Ss   16:22   0:02 /usr/bin/dbus-daemon --session --address=systemd: --n
+akimovm+    2137  0.0  0.2 691808  7168 ?        Ssl  16:22   0:00 /usr/libexec/xdg-document-portal
+akimovm+    2161  0.0  0.2 318712  6488 ?        Ssl  16:22   0:00 /usr/libexec/xdg-permission-store
+root        2168  0.0  0.0   2768  1884 ?        Ss   16:22   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unm
+akimovm+    2179  0.0  0.2 244976  6408 tty2     Ssl+ 16:22   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESS
+akimovm+    2192  0.0  0.4 305200 11712 tty2     Sl+  16:22   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+akimovm+    2269  0.0  0.2 162172  6320 ?        Ssl  16:22   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/
+akimovm+    2271  0.0  0.2  97904  5268 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-ctl --monitor
+akimovm+    2294  0.0  0.2 397716  7660 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd
+akimovm+    2310  0.0  0.2 468988  6964 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+akimovm+    2312  0.0  0.5 675532 13240 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-binary --systemd-service -
+akimovm+    2363  5.7  8.4 3903460 221760 ?      Ssl  16:22   2:45 /usr/bin/gnome-shell
+akimovm+    2366  0.0  0.2 380644  7008 ?        Sl   16:22   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+akimovm+    2379  0.0  0.1   7212  4532 ?        S    16:22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/default
+akimovm+    2425  0.0  0.2 233768  6616 ?        Sl   16:22   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+akimovm+    2460  0.0  0.5 655436 14424 ?        Sl   16:22   0:00 /usr/libexec/gnome-shell-calendar-server
+akimovm+    2472  0.0  1.6 764584 43652 ?        Ssl  16:22   0:00 /usr/libexec/evolution-source-registry
+akimovm+    2481  0.0  0.5 2741140 14336 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shel
+akimovm+    2483  0.0  0.3 398008  8412 ?        Ssl  16:22   0:01 /usr/bin/ibus-daemon --panel disable
+akimovm+    2484  0.0  0.2 392940  7072 ?        Ssl  16:22   0:00 /usr/libexec/gsd-a11y-settings
+akimovm+    2485  0.0  0.5 420688 13188 ?        Ssl  16:22   0:00 /usr/libexec/gsd-color
+akimovm+    2486  0.0  0.3 438532  9272 ?        Ssl  16:22   0:00 /usr/libexec/gsd-datetime
+akimovm+    2487  0.0  0.3 468308  8124 ?        Ssl  16:22   0:00 /usr/libexec/gsd-housekeeping
+akimovm+    2488  0.0  0.4 419460 13052 ?        Ssl  16:22   0:00 /usr/libexec/gsd-keyboard
+akimovm+    2489  0.0  0.5 752292 15176 ?        Ssl  16:22   0:00 /usr/libexec/gsd-media-keys
+akimovm+    2490  0.0  0.5 531164 15296 ?        Ssl  16:22   0:00 /usr/libexec/gsd-power
+akimovm+    2495  0.0  0.3 330328 10156 ?        Ssl  16:22   0:00 /usr/libexec/gsd-print-notifications
+akimovm+    2497  0.0  0.2 540580  6568 ?        Ssl  16:22   0:00 /usr/libexec/gsd-rfkill
+akimovm+    2500  0.0  0.2 318704  6100 ?        Ssl  16:22   0:00 /usr/libexec/gsd-screensaver-proxy
+akimovm+    2502  0.0  0.3 550264  9604 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sharing
+akimovm+    2503  0.0  0.2 395252  7728 ?        Ssl  16:22   0:00 /usr/libexec/gsd-smartcard
+akimovm+    2505  0.0  0.3 403624  8268 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sound
+akimovm+    2507  0.0  0.5 494524 13384 ?        Ssl  16:22   0:00 /usr/libexec/gsd-wacom
+akimovm+    2518  0.0  0.2 305860  7520 ?        Sl   16:22   0:00 /usr/libexec/gsd-disk-utility-notify
+akimovm+    2519  0.0  2.0 996368 54124 ?        Sl   16:22   0:00 /usr/libexec/evolution-data-server/evolution-alarm-no
+akimovm+    2560  0.0  0.5 256804 14364 ?        S    16:22   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -cor
+akimovm+    2629  0.0  0.2  39128  7556 ?        Ss   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2656  0.0  0.4 423104 11844 ?        Sl   16:22   0:00 /usr/libexec/gsd-printer
+akimovm+    2681  0.0  0.3 619244 10216 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+akimovm+    2731  0.0  0.2 245940  7088 ?        Sl   16:22   0:00 /usr/libexec/ibus-memconf
+akimovm+    2734  0.1  0.8 428480 22748 ?        Sl   16:22   0:03 /usr/libexec/ibus-extension-gtk3
+akimovm+    2739  0.0  0.6 556428 16748 ?        Sl   16:22   0:00 /usr/libexec/goa-daemon
+akimovm+    2743  0.0  0.2 319540  7340 ?        Sl   16:22   0:00 /usr/libexec/ibus-portal
+akimovm+    2768  0.0  0.5 429596 13880 ?        Sl   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2778  0.0  0.8 900448 21048 ?        Ssl  16:22   0:00 /usr/libexec/evolution-calendar-factory
+akimovm+    2784  0.0  0.2 399884  7776 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-afc-volume-monitor
+akimovm+    2801  0.0  0.3 398808  8544 ?        Sl   16:22   0:00 /usr/libexec/goa-identity-service
+akimovm+    2814  0.0  0.2 318940  6696 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+akimovm+    2820  0.0  0.2 319892  6796 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+akimovm+    2829  0.0  0.9 762364 25812 ?        Ssl  16:22   0:00 /usr/libexec/evolution-addressbook-factory
+akimovm+    2834  0.0  0.2 318876  6464 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-goa-volume-monitor
+akimovm+    2877  0.0  0.2 246064  7888 ?        Sl   16:22   0:00 /usr/libexec/ibus-engine-simple
+akimovm+    2883  0.0  0.2 230436  5644 ?        Ssl  16:22   0:00 /usr/libexec/dconf-service
+akimovm+    2909  0.0  0.2 245572  6680 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd-metadata
+akimovm+    2910  0.0  0.3 545588  9328 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvf
+akimovm+    2950  0.0  0.6 2741128 18320 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Scre
+akimovm+    2979  0.0  1.0 819740 28220 ?        SNsl 16:22   0:01 /usr/libexec/tracker-miner-fs-3
+akimovm+    2980  0.0  0.5 710488 14804 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal
+akimovm+    2986  0.0  1.2 1086180 31748 ?       Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gnome
+akimovm+    2995  0.0  0.9 649052 26132 ?        Ssl  16:22   0:00 /usr/libexec/gsd-xsettings
+root        3059  0.0  0.0      0     0 ?        I<   16:22   0:00 [kworker/u516:9-ttm]
+akimovm+    3095  0.0  0.7 274636 19792 ?        Sl   16:22   0:00 /usr/libexec/ibus-x11
+akimovm+    3100  0.0  1.6 752356 43440 ?        Sl   16:22   0:00 /usr/libexec/mutter-x11-frames
+akimovm+    3124  0.0  0.7 425396 19620 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gtk
+akimovm+    3231  0.1  1.7 634612 46676 ?        Ssl  16:23   0:04 /usr/libexec/gnome-terminal-server
+akimovm+    3238  0.0  0.1  20380  3844 pts/0    Ss+  16:23   0:00 bash
+akimovm+    3252  0.0  0.9 499688 23776 ?        Sl   16:23   0:00 /usr/bin/update-notifier
+root        3710  0.0  0.2  13308  7152 ?        Ss   16:30   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startu
+root        3835  0.0  0.0      0     0 ?        I<   16:31   0:00 [kworker/R-tls-strp]
+akimovm+    3922  0.0  0.3 397948  8116 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-recent --spawner :1.19 /org/gtk/gv
+akimovm+    3925  0.0  0.3 398184  8256 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-network --spawner :1.19 /org/gtk/g
+akimovm+    3940  0.0  0.3 399188  8120 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.19 /org/gtk/gvf
+akimovm+    3946  0.0  0.3 397748  8088 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-wsdd --spawner :1.19 /org/gtk/gvfs
+akimovm+    3951  0.0  0.8  53032 22880 ?        S    16:32   0:00 python3 /usr/bin/wsdd --no-host --discovery --listen
+root        3981  0.1  0.0      0     0 ?        I    16:32   0:02 [kworker/u514:0-flush-8:0]
+root        3987  0.0  0.0      0     0 ?        I<   16:32   0:00 [kworker/1:1H-kblockd]
+akimovm+    4314  0.0  0.5 1762864 13756 ?       Sl   16:34   0:00 /usr/bin/snap userd
+root        4934  0.0  0.0      0     0 ?        I<   16:36   0:00 [kworker/0:2H-kblockd]
+root        4944  0.0  0.0      0     0 ?        I    16:36   0:00 [kworker/u513:1-events_power_efficient]
+root        5235  0.2  0.0      0     0 ?        I    16:44   0:03 [kworker/1:1-events]
+root        5561  0.0  0.4  16496 10944 ?        Ss   16:47   0:00 sshd: akimovmir [priv]
+akimovm+    5605  0.3  0.2  16636  6920 ?        S    16:47   0:04 sshd: akimovmir@pts/2
+akimovm+    5606  0.0  0.2  20584  5972 pts/2    Ss   16:47   0:00 -bash
+root        5776  0.0  0.0      0     0 ?        I    16:49   0:00 [kworker/1:2-events]
+root        5797  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u514:2-flush-8:0]
+root        5828  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u513:2-flush-8:0]
+root        5891  0.1  0.0      0     0 ?        I    16:51   0:01 [kworker/0:1-mm_percpu_wq]
+root        5895  0.0  0.0      0     0 ?        I<   16:51   0:00 [kworker/u517:7-ttm]
+root        5923  0.0  0.4  44376 11448 ?        Ss   16:53   0:00 /usr/sbin/cupsd -l
+cups-br+    5924  0.0  0.7 267708 19868 ?        Ssl  16:53   0:00 /usr/sbin/cups-browsed
+root        6087  0.0  0.0      0     0 ?        I    16:56   0:00 [kworker/0:0-events]
+root        6103  0.0  0.3  30044  8388 pts/2    S+   16:58   0:00 sudo -i
+root        6104  0.0  0.0  30044  2596 pts/1    Ss   16:58   0:00 sudo -i
+root        6105  0.0  0.2  20408  5764 pts/1    S    16:58   0:00 -bash
+root        6125  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u517:0-ttm]
+root        6133  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u516:0-ttm]
+root        6142  0.0  0.0      0     0 ?        I<   17:00   0:00 [kworker/1:2H]
+root        6246  0.0  0.0      0     0 ?        I    17:02   0:00 [kworker/0:2-events]
+root        6252  0.1  0.0      0     0 ?        I    17:03   0:00 [kworker/1:0-mm_percpu_wq]
+root        6256  0.0  0.0      0     0 ?        I    17:05   0:00 [kworker/u514:1-flush-8:0]
+root        6281  0.0  0.0      0     0 ?        I    17:07   0:00 [kworker/u513:0-events_unbound]
+root        6291 11.1  1.5 584928 41628 ?        Ssl  17:09   0:02 /usr/libexec/fwupd/fwupd
+root        6308  1.2  0.3 380064  9276 ?        Ssl  17:09   0:00 /usr/libexec/fprintd
+akimovm+    6364  5.5  2.4 2830756 64024 ?       Sl   17:09   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft
+akimovm+    6410 96.4 13.7 11356848 360804 ?     Rl   17:09   0:10 /snap/firefox/5273/usr/lib/firefox/firefox
+akimovm+    6526  1.0  1.8 211680 47560 ?        Sl   17:09   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+root        6529  1.4  0.2  16460  7060 ?        Ss   17:09   0:00 /usr/lib/systemd/systemd-timedated
+akimovm+    6560 13.1  4.4 10817656 117336 ?     Sl   17:09   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    6745 15.4  3.7 2428220 98132 ?       Sl   17:09   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7072  6.5  1.6 210040 44120 ?        Sl   17:09   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7080 16.0  2.7 2397292 72556 ?       Sl   17:09   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7082 18.6  2.7 2397292 72756 ?       Sl   17:09   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7111 28.3  2.7 2397288 72888 ?       Sl   17:09   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+root        7133  150  0.1  20024  4352 pts/1    R+   17:09   0:00 ps aux
+root@akimovmir-VMware-Virtual-Platform:~# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.5  23580 14916 ?        Ss   16:21   0:06 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    16:21   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    16:21   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-slub_flushwq]
+root           7  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/0:0H-kblockd]
+root          11  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:0-ipv6_addrconf]
+root          12  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mm_percpu_wq]
+root          13  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    16:21   0:02 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_par_gp_kthread_worker/1]
+root          19  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_gp_kthread_worker]
+root          20  0.0  0.0      0     0 ?        S    16:21   0:00 [migration/0]
+root          21  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/0]
+root          22  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/0]
+root          23  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/1]
+root          24  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/1]
+root          25  0.0  0.0      0     0 ?        S    16:21   0:01 [migration/1]
+root          26  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/1]
+root          31  0.0  0.0      0     0 ?        S    16:21   0:00 [kdevtmpfs]
+root          32  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-inet_frag_wq]
+root          34  0.0  0.0      0     0 ?        S    16:21   0:00 [kauditd]
+root          35  0.0  0.0      0     0 ?        S    16:21   0:00 [khungtaskd]
+root          36  0.0  0.0      0     0 ?        S    16:21   0:00 [oom_reaper]
+root          38  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-writeback]
+root          39  0.0  0.0      0     0 ?        S    16:21   0:02 [kcompactd0]
+root          40  0.0  0.0      0     0 ?        SN   16:21   0:00 [ksmd]
+root          41  0.0  0.0      0     0 ?        SN   16:21   0:00 [khugepaged]
+root          42  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kintegrityd]
+root          43  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kblockd]
+root          44  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-blkcg_punt_bio]
+root          45  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/9-acpi]
+root          47  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-tpm_dev_wq]
+root          48  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ata_sff]
+root          49  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md]
+root          50  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md_bitmap]
+root          51  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-edac-poller]
+root          52  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-devfreq_wq]
+root          54  0.0  0.0      0     0 ?        S    16:21   0:00 [watchdogd]
+root          56  0.1  0.0      0     0 ?        S    16:21   0:05 [kswapd0]
+root          57  0.0  0.0      0     0 ?        S    16:21   0:00 [ecryptfs-kthread]
+root          58  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kthrotld]
+root          59  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/24-pciehp]
+root          60  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/25-pciehp]
+root          61  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/26-pciehp]
+root          62  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/27-pciehp]
+root          63  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/28-pciehp]
+root          64  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/29-pciehp]
+root          65  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/30-pciehp]
+root          66  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/31-pciehp]
+root          67  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/32-pciehp]
+root          68  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/33-pciehp]
+root          69  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/34-pciehp]
+root          70  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/35-pciehp]
+root          71  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/36-pciehp]
+root          72  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/37-pciehp]
+root          73  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/38-pciehp]
+root          74  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/39-pciehp]
+root          75  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/40-pciehp]
+root          76  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/41-pciehp]
+root          77  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/42-pciehp]
+root          78  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/43-pciehp]
+root          79  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/44-pciehp]
+root          80  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/45-pciehp]
+root          81  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/46-pciehp]
+root          82  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/47-pciehp]
+root          83  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/48-pciehp]
+root          84  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/49-pciehp]
+root          85  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/50-pciehp]
+root          86  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/51-pciehp]
+root          87  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/52-pciehp]
+root          88  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/53-pciehp]
+root          89  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/54-pciehp]
+root          90  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/55-pciehp]
+root          91  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-acpi_thermal_pm]
+root          92  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_0]
+root          93  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_0]
+root          94  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_1]
+root          95  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_1]
+root         100  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mld]
+root         102  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ipv6_addrconf]
+root         103  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:1-ipv6_addrconf]
+root         110  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kstrp]
+root         112  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:0-hci0]
+root         127  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-charger_manager]
+root         175  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt_poll_0]
+root         176  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt/0]
+root         177  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_2]
+root         178  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_2]
+root         179  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_3]
+root         180  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_3]
+root         181  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_4]
+root         182  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_4]
+root         183  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_5]
+root         184  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_5]
+root         185  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_6]
+root         186  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_6]
+root         194  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_7]
+root         195  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_7]
+root         196  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_8]
+root         198  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_8]
+root         199  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_9]
+root         202  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_9]
+root         204  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_10]
+root         207  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_10]
+root         210  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_11]
+root         211  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_11]
+root         212  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_12]
+root         213  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_12]
+root         214  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_13]
+root         216  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_13]
+root         217  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_14]
+root         218  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_14]
+root         219  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_15]
+root         220  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_15]
+root         221  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_16]
+root         222  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_16]
+root         223  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_17]
+root         224  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_17]
+root         225  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_18]
+root         226  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_18]
+root         227  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_19]
+root         228  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_19]
+root         229  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_20]
+root         230  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_20]
+root         231  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_21]
+root         232  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_21]
+root         233  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_22]
+root         234  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_22]
+root         235  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_23]
+root         236  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_23]
+root         237  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_24]
+root         238  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_24]
+root         239  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_25]
+root         240  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_25]
+root         241  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_26]
+root         242  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_26]
+root         243  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_27]
+root         244  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_27]
+root         245  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_28]
+root         246  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_28]
+root         247  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_29]
+root         248  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_29]
+root         249  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_30]
+root         250  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_30]
+root         251  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_31]
+root         252  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_31]
+root         253  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_32]
+root         254  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_32]
+root         276  0.0  0.0      0     0 ?        I    16:21   0:01 [kworker/u514:26-events_power_efficient]
+root         326  0.0  0.0      0     0 ?        S    16:21   0:00 [jbd2/sda2-8]
+root         327  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ext4-rsv-conversion]
+root         372  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/57-vmw_vmci]
+root         373  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/58-vmw_vmci]
+root         374  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/59-vmw_vmci]
+root         382  0.0  0.7  49864 18616 ?        S<s  16:21   0:01 /usr/lib/systemd/systemd-journald
+root         422  0.0  0.3  33136  8584 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-udevd
+root         446  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+systemd+     586  0.0  0.2  16912  6768 ?        Ss   16:21   0:01 /usr/lib/systemd/systemd-oomd
+systemd+     589  0.0  0.4  21308 13116 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     592  0.0  0.2  90228  7028 ?        Ssl  16:21   0:00 /usr/lib/systemd/systemd-timesyncd
+root         694  1.0  0.0      0     0 ?        S    16:21   0:31 [irq/16-vmwgfx]
+root         697  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ttm]
+avahi        753  0.0  0.1   6224  3940 ?        Ss   16:21   0:00 avahi-daemon: running [akimovmir-VMware-Virtual-Platf
+message+     754  0.0  0.2   9848  6668 ?        Ss   16:21   0:02 @dbus-daemon --system --address=systemd: --nofork --n
+gnome-r+     759  0.0  0.4 516216 12652 ?        Ssl  16:21   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      764  0.0  0.3 397252 10068 ?        Ssl  16:21   0:02 /usr/lib/polkit-1/polkitd --no-debug
+root         771  0.0  1.0 1844736 27580 ?       Ssl  16:21   0:02 /usr/lib/snapd/snapd
+root         776  0.0  0.2 320056  7812 ?        Ssl  16:21   0:00 /usr/libexec/accounts-daemon
+root         780  0.0  0.1  18192  2864 ?        Ss   16:21   0:00 /usr/sbin/cron -f -P
+root         785  0.0  0.2 319064  6980 ?        Ssl  16:21   0:00 /usr/libexec/switcheroo-control
+root         792  0.0  0.3  17512  7956 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-logind
+root         793  0.0  0.4 542716 12020 ?        Ssl  16:21   0:00 /usr/libexec/udisks2/udisksd
+syslog       810  0.0  0.1 220144  4360 ?        Ssl  16:21   0:00 /usr/sbin/rsyslogd -n -iNONE
+avahi        823  0.0  0.0   6036  1244 ?        S    16:21   0:00 avahi-daemon: chroot helper
+root         828  0.0  0.7 345052 19188 ?        Ssl  16:21   0:00 /usr/sbin/NetworkManager --no-daemon
+root         832  0.0  0.1  16472  4036 ?        Ss   16:21   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_suppli
+root         874  0.0  0.2 389864  7544 ?        Ssl  16:21   0:00 /usr/sbin/ModemManager
+root         953  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:2-hci0]
+root        1081  0.0  0.0      0     0 ?        I    16:21   0:01 [kworker/u513:5-events_unbound]
+root        1084  0.0  0.4 121776 11460 ?        Ssl  16:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root        1120  0.0  0.3 321672  8796 ?        Ssl  16:21   0:00 /usr/sbin/gdm3
+root        1132  0.0  0.1  12100  4960 ?        Ss   16:21   0:00 /usr/libexec/bluetooth/bluetoothd
+root        1166  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-cryptd]
+root        1272  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+rtkit       1384  0.0  0.1  20480  3016 ?        SNsl 16:21   0:00 /usr/libexec/rtkit-daemon
+colord      1641  0.0  0.5 326924 14028 ?        Ssl  16:21   0:00 /usr/libexec/colord
+root        1685  0.0  0.3 327424  8312 ?        Ssl  16:21   0:00 /usr/libexec/upowerd
+root        2020  0.0  0.2 320388  7212 ?        Ssl  16:21   0:00 /usr/libexec/power-profiles-daemon
+root        2064  0.0  0.4 397004 11072 ?        Sl   16:22   0:00 gdm-session-worker [pam/gdm-password]
+akimovm+    2078  0.0  0.4  21524 12712 ?        Ss   16:22   0:02 /usr/lib/systemd/systemd --user
+akimovm+    2085  0.0  0.0  20636  1904 ?        S    16:22   0:00 (sd-pam)
+akimovm+    2102  1.1  0.2 180768  7648 ?        S<sl 16:22   0:34 /usr/bin/pipewire
+akimovm+    2105  0.0  0.1  95572  4520 ?        Ssl  16:22   0:00 /usr/bin/pipewire -c filter-chain.conf
+akimovm+    2111  0.0  0.4 490528 12816 ?        S<sl 16:22   0:00 /usr/bin/wireplumber
+akimovm+    2114  0.0  0.3 188964  9876 ?        S<sl 16:22   0:00 /usr/bin/pipewire-pulse
+akimovm+    2115  0.0  0.3 324976  8768 ?        SLsl 16:22   0:00 /usr/bin/gnome-keyring-daemon --foreground --componen
+akimovm+    2124  0.0  0.2   8720  6408 ?        Ss   16:22   0:02 /usr/bin/dbus-daemon --session --address=systemd: --n
+akimovm+    2137  0.0  0.2 691808  7168 ?        Ssl  16:22   0:00 /usr/libexec/xdg-document-portal
+akimovm+    2161  0.0  0.2 318712  6488 ?        Ssl  16:22   0:00 /usr/libexec/xdg-permission-store
+root        2168  0.0  0.0   2768  1884 ?        Ss   16:22   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unm
+akimovm+    2179  0.0  0.2 244976  6408 tty2     Ssl+ 16:22   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESS
+akimovm+    2192  0.0  0.4 305200 11712 tty2     Sl+  16:22   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+akimovm+    2269  0.0  0.2 162172  6320 ?        Ssl  16:22   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/
+akimovm+    2271  0.0  0.2  97904  5268 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-ctl --monitor
+akimovm+    2294  0.0  0.2 397716  7660 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd
+akimovm+    2310  0.0  0.2 468988  6964 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+akimovm+    2312  0.0  0.5 675532 13240 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-binary --systemd-service -
+akimovm+    2363  5.3  7.9 3887788 208296 ?      Ssl  16:22   2:46 /usr/bin/gnome-shell
+akimovm+    2366  0.0  0.2 380644  7008 ?        Sl   16:22   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+akimovm+    2379  0.0  0.1   7212  4532 ?        S    16:22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/default
+akimovm+    2425  0.0  0.2 233768  6616 ?        Sl   16:22   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+akimovm+    2460  0.0  0.5 655436 14424 ?        Sl   16:22   0:00 /usr/libexec/gnome-shell-calendar-server
+akimovm+    2472  0.0  1.6 764584 43652 ?        Ssl  16:22   0:00 /usr/libexec/evolution-source-registry
+akimovm+    2481  0.0  0.5 2741140 14336 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shel
+akimovm+    2483  0.0  0.3 398008  8412 ?        Ssl  16:22   0:01 /usr/bin/ibus-daemon --panel disable
+akimovm+    2484  0.0  0.2 392940  7072 ?        Ssl  16:22   0:00 /usr/libexec/gsd-a11y-settings
+akimovm+    2485  0.0  0.5 420688 13188 ?        Ssl  16:22   0:00 /usr/libexec/gsd-color
+akimovm+    2486  0.0  0.3 438532  9272 ?        Ssl  16:22   0:00 /usr/libexec/gsd-datetime
+akimovm+    2487  0.0  0.3 468308  8124 ?        Ssl  16:22   0:00 /usr/libexec/gsd-housekeeping
+akimovm+    2488  0.0  0.4 419460 13052 ?        Ssl  16:22   0:00 /usr/libexec/gsd-keyboard
+akimovm+    2489  0.0  0.5 752292 15176 ?        Ssl  16:22   0:00 /usr/libexec/gsd-media-keys
+akimovm+    2490  0.0  0.5 531164 15296 ?        Ssl  16:22   0:00 /usr/libexec/gsd-power
+akimovm+    2495  0.0  0.3 330328 10156 ?        Ssl  16:22   0:00 /usr/libexec/gsd-print-notifications
+akimovm+    2497  0.0  0.2 540580  6568 ?        Ssl  16:22   0:00 /usr/libexec/gsd-rfkill
+akimovm+    2500  0.0  0.2 318704  6100 ?        Ssl  16:22   0:00 /usr/libexec/gsd-screensaver-proxy
+akimovm+    2502  0.0  0.3 550264  9604 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sharing
+akimovm+    2503  0.0  0.2 395252  7728 ?        Ssl  16:22   0:00 /usr/libexec/gsd-smartcard
+akimovm+    2505  0.0  0.3 403624  8268 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sound
+akimovm+    2507  0.0  0.5 494524 13384 ?        Ssl  16:22   0:00 /usr/libexec/gsd-wacom
+akimovm+    2518  0.0  0.2 305860  7520 ?        Sl   16:22   0:00 /usr/libexec/gsd-disk-utility-notify
+akimovm+    2519  0.0  2.0 996368 54124 ?        Sl   16:22   0:00 /usr/libexec/evolution-data-server/evolution-alarm-no
+akimovm+    2560  0.0  0.5 256804 14364 ?        S    16:22   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -cor
+akimovm+    2629  0.0  0.2  39128  7556 ?        Ss   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2656  0.0  0.4 423104 11844 ?        Sl   16:22   0:00 /usr/libexec/gsd-printer
+akimovm+    2681  0.0  0.3 619244 10216 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+akimovm+    2731  0.0  0.2 245940  7088 ?        Sl   16:22   0:00 /usr/libexec/ibus-memconf
+akimovm+    2734  0.1  0.8 428480 22748 ?        Sl   16:22   0:03 /usr/libexec/ibus-extension-gtk3
+akimovm+    2739  0.0  0.6 556428 16748 ?        Sl   16:22   0:00 /usr/libexec/goa-daemon
+akimovm+    2743  0.0  0.2 319540  7340 ?        Sl   16:22   0:00 /usr/libexec/ibus-portal
+akimovm+    2768  0.0  0.5 429596 13880 ?        Sl   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2778  0.0  0.8 900448 21048 ?        Ssl  16:22   0:00 /usr/libexec/evolution-calendar-factory
+akimovm+    2784  0.0  0.2 399884  7776 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-afc-volume-monitor
+akimovm+    2801  0.0  0.3 398808  8544 ?        Sl   16:22   0:00 /usr/libexec/goa-identity-service
+akimovm+    2814  0.0  0.2 318940  6696 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+akimovm+    2820  0.0  0.2 319892  6796 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+akimovm+    2829  0.0  0.9 762364 25812 ?        Ssl  16:22   0:00 /usr/libexec/evolution-addressbook-factory
+akimovm+    2834  0.0  0.2 318876  6464 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-goa-volume-monitor
+akimovm+    2877  0.0  0.2 246064  7888 ?        Sl   16:22   0:00 /usr/libexec/ibus-engine-simple
+akimovm+    2883  0.0  0.2 230436  5644 ?        Ssl  16:22   0:00 /usr/libexec/dconf-service
+akimovm+    2909  0.0  0.2 245572  6680 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd-metadata
+akimovm+    2910  0.0  0.3 545588  9328 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvf
+akimovm+    2950  0.0  0.6 2741128 18320 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Scre
+akimovm+    2979  0.0  1.0 819740 28220 ?        SNsl 16:22   0:01 /usr/libexec/tracker-miner-fs-3
+akimovm+    2980  0.0  0.5 710488 14804 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal
+akimovm+    2986  0.0  1.2 1086180 31748 ?       Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gnome
+akimovm+    2995  0.0  0.9 649052 26132 ?        Ssl  16:22   0:00 /usr/libexec/gsd-xsettings
+root        3059  0.0  0.0      0     0 ?        I<   16:22   0:00 [kworker/u516:9-ttm]
+akimovm+    3095  0.0  0.7 274636 19792 ?        Sl   16:22   0:00 /usr/libexec/ibus-x11
+akimovm+    3100  0.0  1.6 752356 43440 ?        Sl   16:22   0:00 /usr/libexec/mutter-x11-frames
+akimovm+    3124  0.0  0.7 425396 19620 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gtk
+akimovm+    3231  0.1  1.7 634612 46676 ?        Ssl  16:23   0:04 /usr/libexec/gnome-terminal-server
+akimovm+    3238  0.0  0.1  20380  3844 pts/0    Ss+  16:23   0:00 bash
+akimovm+    3252  0.0  0.9 499688 23776 ?        Sl   16:23   0:00 /usr/bin/update-notifier
+root        3710  0.0  0.2  13308  7152 ?        Ss   16:30   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startu
+root        3835  0.0  0.0      0     0 ?        I<   16:31   0:00 [kworker/R-tls-strp]
+akimovm+    3922  0.0  0.3 397948  8116 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-recent --spawner :1.19 /org/gtk/gv
+akimovm+    3925  0.0  0.3 398184  8256 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-network --spawner :1.19 /org/gtk/g
+akimovm+    3940  0.0  0.3 399188  8120 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.19 /org/gtk/gvf
+akimovm+    3946  0.0  0.3 397748  8088 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-wsdd --spawner :1.19 /org/gtk/gvfs
+akimovm+    3951  0.0  0.8  53032 22880 ?        S    16:32   0:00 python3 /usr/bin/wsdd --no-host --discovery --listen
+root        3981  0.0  0.0      0     0 ?        I    16:32   0:02 [kworker/u514:0-events_power_efficient]
+root        3987  0.0  0.0      0     0 ?        I<   16:32   0:00 [kworker/1:1H-kblockd]
+akimovm+    4314  0.0  0.5 1762864 13884 ?       Sl   16:34   0:00 /usr/bin/snap userd
+root        4934  0.0  0.0      0     0 ?        I<   16:36   0:00 [kworker/0:2H-kblockd]
+root        4944  0.0  0.0      0     0 ?        I    16:36   0:00 [kworker/u513:1-events_power_efficient]
+root        5235  0.1  0.0      0     0 ?        I    16:44   0:03 [kworker/1:1-events]
+root        5561  0.0  0.4  16496 10944 ?        Ss   16:47   0:00 sshd: akimovmir [priv]
+akimovm+    5605  0.2  0.2  16636  6920 ?        R    16:47   0:04 sshd: akimovmir@pts/2
+akimovm+    5606  0.0  0.2  20584  5972 pts/2    Ss   16:47   0:00 -bash
+root        5776  0.0  0.0      0     0 ?        I    16:49   0:00 [kworker/1:2-events]
+root        5797  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u514:2-flush-8:0]
+root        5828  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u513:2-events_power_efficient]
+root        5891  0.1  0.0      0     0 ?        I    16:51   0:01 [kworker/0:1-events]
+root        5895  0.0  0.0      0     0 ?        I<   16:51   0:00 [kworker/u517:7-ttm]
+root        5923  0.0  0.4  44376 11448 ?        Ss   16:53   0:00 /usr/sbin/cupsd -l
+cups-br+    5924  0.0  0.7 267708 19868 ?        Ssl  16:53   0:00 /usr/sbin/cups-browsed
+root        6103  0.0  0.3  30044  8388 pts/2    S+   16:58   0:00 sudo -i
+root        6104  0.0  0.0  30044  2596 pts/1    Ss   16:58   0:00 sudo -i
+root        6105  0.0  0.2  20408  5764 pts/1    S    16:58   0:00 -bash
+root        6125  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u517:0-ttm]
+root        6133  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u516:0-ttm]
+root        6142  0.0  0.0      0     0 ?        I<   17:00   0:00 [kworker/1:2H]
+root        6246  0.0  0.0      0     0 ?        I    17:02   0:00 [kworker/0:2-events]
+root        6252  0.0  0.0      0     0 ?        I    17:03   0:00 [kworker/1:0-events]
+root        6256  0.0  0.0      0     0 ?        I    17:05   0:00 [kworker/u514:1-events_unbound]
+root        6281  0.0  0.0      0     0 ?        I    17:07   0:00 [kworker/u513:0-events_unbound]
+root        6291  0.8  1.5 584928 41628 ?        Ssl  17:09   0:02 /usr/libexec/fwupd/fwupd
+akimovm+    6364  0.3  2.4 2896292 64436 ?       Sl   17:09   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft
+root        7144  0.0  0.0      0     0 ?        I<   17:09   0:00 [kworker/1:0H]
+root        7163  0.0  0.0      0     0 ?        I<   17:10   0:00 [kworker/u517:1-ttm]
+root        7164  0.0  0.0      0     0 ?        I<   17:10   0:00 [kworker/u517:2-ttm]
+root        7175  0.1  0.0      0     0 ?        I    17:10   0:00 [kworker/1:3-events]
+root        7185  0.0  0.0      0     0 ?        I    17:13   0:00 [kworker/0:0-events]
+root        7186  200  0.1  20024  4228 pts/1    R+   17:14   0:00 ps aux
+root@akimovmir-VMware-Virtual-Platform:~# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.5  23580 14916 ?        Ss   16:21   0:06 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    16:21   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    16:21   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-slub_flushwq]
+root           7  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/0:0H-kblockd]
+root          11  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:0-ipv6_addrconf]
+root          12  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mm_percpu_wq]
+root          13  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    16:21   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    16:21   0:02 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_par_gp_kthread_worker/1]
+root          19  0.0  0.0      0     0 ?        S    16:21   0:00 [rcu_exp_gp_kthread_worker]
+root          20  0.0  0.0      0     0 ?        S    16:21   0:00 [migration/0]
+root          21  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/0]
+root          22  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/0]
+root          23  0.0  0.0      0     0 ?        S    16:21   0:00 [cpuhp/1]
+root          24  0.0  0.0      0     0 ?        S    16:21   0:00 [idle_inject/1]
+root          25  0.0  0.0      0     0 ?        S    16:21   0:01 [migration/1]
+root          26  0.0  0.0      0     0 ?        S    16:21   0:00 [ksoftirqd/1]
+root          31  0.0  0.0      0     0 ?        S    16:21   0:00 [kdevtmpfs]
+root          32  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-inet_frag_wq]
+root          34  0.0  0.0      0     0 ?        S    16:21   0:00 [kauditd]
+root          35  0.0  0.0      0     0 ?        S    16:21   0:00 [khungtaskd]
+root          36  0.0  0.0      0     0 ?        S    16:21   0:00 [oom_reaper]
+root          38  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-writeback]
+root          39  0.0  0.0      0     0 ?        S    16:21   0:02 [kcompactd0]
+root          40  0.0  0.0      0     0 ?        SN   16:21   0:00 [ksmd]
+root          41  0.0  0.0      0     0 ?        SN   16:21   0:00 [khugepaged]
+root          42  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kintegrityd]
+root          43  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kblockd]
+root          44  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-blkcg_punt_bio]
+root          45  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/9-acpi]
+root          47  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-tpm_dev_wq]
+root          48  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ata_sff]
+root          49  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md]
+root          50  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-md_bitmap]
+root          51  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-edac-poller]
+root          52  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-devfreq_wq]
+root          54  0.0  0.0      0     0 ?        S    16:21   0:00 [watchdogd]
+root          56  0.1  0.0      0     0 ?        S    16:21   0:05 [kswapd0]
+root          57  0.0  0.0      0     0 ?        S    16:21   0:00 [ecryptfs-kthread]
+root          58  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kthrotld]
+root          59  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/24-pciehp]
+root          60  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/25-pciehp]
+root          61  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/26-pciehp]
+root          62  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/27-pciehp]
+root          63  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/28-pciehp]
+root          64  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/29-pciehp]
+root          65  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/30-pciehp]
+root          66  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/31-pciehp]
+root          67  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/32-pciehp]
+root          68  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/33-pciehp]
+root          69  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/34-pciehp]
+root          70  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/35-pciehp]
+root          71  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/36-pciehp]
+root          72  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/37-pciehp]
+root          73  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/38-pciehp]
+root          74  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/39-pciehp]
+root          75  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/40-pciehp]
+root          76  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/41-pciehp]
+root          77  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/42-pciehp]
+root          78  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/43-pciehp]
+root          79  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/44-pciehp]
+root          80  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/45-pciehp]
+root          81  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/46-pciehp]
+root          82  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/47-pciehp]
+root          83  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/48-pciehp]
+root          84  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/49-pciehp]
+root          85  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/50-pciehp]
+root          86  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/51-pciehp]
+root          87  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/52-pciehp]
+root          88  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/53-pciehp]
+root          89  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/54-pciehp]
+root          90  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/55-pciehp]
+root          91  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-acpi_thermal_pm]
+root          92  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_0]
+root          93  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_0]
+root          94  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_1]
+root          95  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_1]
+root         100  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mld]
+root         102  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ipv6_addrconf]
+root         103  0.0  0.0      0     0 ?        I    16:21   0:00 [kworker/u512:1-ipv6_addrconf]
+root         110  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-kstrp]
+root         112  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:0-hci0]
+root         127  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-charger_manager]
+root         175  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt_poll_0]
+root         176  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-mpt/0]
+root         177  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_2]
+root         178  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_2]
+root         179  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_3]
+root         180  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_3]
+root         181  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_4]
+root         182  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_4]
+root         183  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_5]
+root         184  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_5]
+root         185  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_6]
+root         186  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_6]
+root         194  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_7]
+root         195  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_7]
+root         196  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_8]
+root         198  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_8]
+root         199  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_9]
+root         202  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_9]
+root         204  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_10]
+root         207  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_10]
+root         210  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_11]
+root         211  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_11]
+root         212  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_12]
+root         213  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_12]
+root         214  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_13]
+root         216  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_13]
+root         217  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_14]
+root         218  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_14]
+root         219  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_15]
+root         220  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_15]
+root         221  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_16]
+root         222  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_16]
+root         223  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_17]
+root         224  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_17]
+root         225  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_18]
+root         226  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_18]
+root         227  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_19]
+root         228  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_19]
+root         229  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_20]
+root         230  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_20]
+root         231  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_21]
+root         232  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_21]
+root         233  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_22]
+root         234  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_22]
+root         235  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_23]
+root         236  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_23]
+root         237  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_24]
+root         238  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_24]
+root         239  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_25]
+root         240  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_25]
+root         241  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_26]
+root         242  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_26]
+root         243  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_27]
+root         244  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_27]
+root         245  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_28]
+root         246  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_28]
+root         247  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_29]
+root         248  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_29]
+root         249  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_30]
+root         250  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_30]
+root         251  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_31]
+root         252  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_31]
+root         253  0.0  0.0      0     0 ?        S    16:21   0:00 [scsi_eh_32]
+root         254  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-scsi_tmf_32]
+root         276  0.0  0.0      0     0 ?        I    16:21   0:02 [kworker/u514:26-events_unbound]
+root         326  0.0  0.0      0     0 ?        S    16:21   0:00 [jbd2/sda2-8]
+root         327  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ext4-rsv-conversion]
+root         372  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/57-vmw_vmci]
+root         373  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/58-vmw_vmci]
+root         374  0.0  0.0      0     0 ?        S    16:21   0:00 [irq/59-vmw_vmci]
+root         382  0.0  0.7  49864 18616 ?        S<s  16:21   0:01 /usr/lib/systemd/systemd-journald
+root         422  0.0  0.3  33136  8584 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-udevd
+root         446  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+systemd+     586  0.0  0.2  16912  6768 ?        Ss   16:21   0:01 /usr/lib/systemd/systemd-oomd
+systemd+     589  0.0  0.4  21308 13116 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     592  0.0  0.2  90228  7028 ?        Ssl  16:21   0:00 /usr/lib/systemd/systemd-timesyncd
+root         694  1.0  0.0      0     0 ?        S    16:21   0:31 [irq/16-vmwgfx]
+root         697  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-ttm]
+avahi        753  0.0  0.1   6224  3940 ?        Ss   16:21   0:00 avahi-daemon: running [akimovmir-VMware-Virtual-Platf
+message+     754  0.0  0.2   9848  6668 ?        Ss   16:21   0:02 @dbus-daemon --system --address=systemd: --nofork --n
+gnome-r+     759  0.0  0.4 516216 12652 ?        Ssl  16:21   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      764  0.0  0.3 397252 10068 ?        Ssl  16:21   0:02 /usr/lib/polkit-1/polkitd --no-debug
+root         771  0.0  1.0 1844736 27964 ?       Ssl  16:21   0:02 /usr/lib/snapd/snapd
+root         776  0.0  0.2 320056  7812 ?        Ssl  16:21   0:00 /usr/libexec/accounts-daemon
+root         780  0.0  0.1  18192  2864 ?        Ss   16:21   0:00 /usr/sbin/cron -f -P
+root         785  0.0  0.2 319064  6980 ?        Ssl  16:21   0:00 /usr/libexec/switcheroo-control
+root         792  0.0  0.3  17512  7956 ?        Ss   16:21   0:00 /usr/lib/systemd/systemd-logind
+root         793  0.0  0.4 542716 12020 ?        Ssl  16:21   0:00 /usr/libexec/udisks2/udisksd
+syslog       810  0.0  0.1 220144  4360 ?        Ssl  16:21   0:00 /usr/sbin/rsyslogd -n -iNONE
+avahi        823  0.0  0.0   6036  1244 ?        S    16:21   0:00 avahi-daemon: chroot helper
+root         828  0.0  0.7 345052 19188 ?        Ssl  16:21   0:00 /usr/sbin/NetworkManager --no-daemon
+root         832  0.0  0.1  16472  4036 ?        Ss   16:21   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_suppli
+root         874  0.0  0.2 389864  7544 ?        Ssl  16:21   0:00 /usr/sbin/ModemManager
+root         953  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/u515:2-hci0]
+root        1081  0.0  0.0      0     0 ?        I    16:21   0:01 [kworker/u513:5-events_power_efficient]
+root        1084  0.0  0.4 121776 11460 ?        Ssl  16:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root        1120  0.0  0.3 321672  8796 ?        Ssl  16:21   0:00 /usr/sbin/gdm3
+root        1132  0.0  0.1  12100  4960 ?        Ss   16:21   0:00 /usr/libexec/bluetooth/bluetoothd
+root        1166  0.0  0.0      0     0 ?        I<   16:21   0:00 [kworker/R-cryptd]
+root        1272  0.0  0.0      0     0 ?        S    16:21   0:00 [psimon]
+rtkit       1384  0.0  0.1  20480  3016 ?        SNsl 16:21   0:00 /usr/libexec/rtkit-daemon
+colord      1641  0.0  0.5 326924 14028 ?        Ssl  16:21   0:00 /usr/libexec/colord
+root        1685  0.0  0.3 327424  8312 ?        Ssl  16:21   0:00 /usr/libexec/upowerd
+root        2020  0.0  0.2 320388  7212 ?        Ssl  16:21   0:00 /usr/libexec/power-profiles-daemon
+root        2064  0.0  0.4 397004 11072 ?        Sl   16:22   0:00 gdm-session-worker [pam/gdm-password]
+akimovm+    2078  0.0  0.4  21524 12712 ?        Ss   16:22   0:02 /usr/lib/systemd/systemd --user
+akimovm+    2085  0.0  0.0  20636  1904 ?        S    16:22   0:00 (sd-pam)
+akimovm+    2102  1.1  0.2 180768  7648 ?        S<sl 16:22   0:34 /usr/bin/pipewire
+akimovm+    2105  0.0  0.1  95572  4520 ?        Ssl  16:22   0:00 /usr/bin/pipewire -c filter-chain.conf
+akimovm+    2111  0.0  0.4 490528 12816 ?        S<sl 16:22   0:00 /usr/bin/wireplumber
+akimovm+    2114  0.0  0.3 188964  9876 ?        S<sl 16:22   0:00 /usr/bin/pipewire-pulse
+akimovm+    2115  0.0  0.3 324976  8768 ?        SLsl 16:22   0:00 /usr/bin/gnome-keyring-daemon --foreground --componen
+akimovm+    2124  0.0  0.2   8720  6408 ?        Ss   16:22   0:02 /usr/bin/dbus-daemon --session --address=systemd: --n
+akimovm+    2137  0.0  0.2 691808  7168 ?        Ssl  16:22   0:00 /usr/libexec/xdg-document-portal
+akimovm+    2161  0.0  0.2 318712  6488 ?        Ssl  16:22   0:00 /usr/libexec/xdg-permission-store
+root        2168  0.0  0.0   2768  1884 ?        Ss   16:22   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unm
+akimovm+    2179  0.0  0.2 244976  6408 tty2     Ssl+ 16:22   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESS
+akimovm+    2192  0.0  0.4 305200 11712 tty2     Sl+  16:22   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+akimovm+    2269  0.0  0.2 162172  6320 ?        Ssl  16:22   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/
+akimovm+    2271  0.0  0.2  97904  5268 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-ctl --monitor
+akimovm+    2294  0.0  0.2 397716  7660 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd
+akimovm+    2310  0.0  0.2 468988  6964 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+akimovm+    2312  0.0  0.5 675532 13240 ?        Ssl  16:22   0:00 /usr/libexec/gnome-session-binary --systemd-service -
+akimovm+    2363  5.3  8.3 3901304 219736 ?      Ssl  16:22   2:48 /usr/bin/gnome-shell
+akimovm+    2366  0.0  0.2 380644  7008 ?        Sl   16:22   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+akimovm+    2379  0.0  0.1   7212  4532 ?        S    16:22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/default
+akimovm+    2425  0.0  0.2 233768  6616 ?        Sl   16:22   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+akimovm+    2460  0.0  0.5 655436 14424 ?        Sl   16:22   0:00 /usr/libexec/gnome-shell-calendar-server
+akimovm+    2472  0.0  1.6 764584 43652 ?        Ssl  16:22   0:00 /usr/libexec/evolution-source-registry
+akimovm+    2481  0.0  0.5 2741140 14336 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shel
+akimovm+    2483  0.0  0.3 398008  8412 ?        Ssl  16:22   0:01 /usr/bin/ibus-daemon --panel disable
+akimovm+    2484  0.0  0.2 392940  7072 ?        Ssl  16:22   0:00 /usr/libexec/gsd-a11y-settings
+akimovm+    2485  0.0  0.5 420688 13188 ?        Ssl  16:22   0:00 /usr/libexec/gsd-color
+akimovm+    2486  0.0  0.3 438532  9272 ?        Ssl  16:22   0:00 /usr/libexec/gsd-datetime
+akimovm+    2487  0.0  0.3 468308  8124 ?        Ssl  16:22   0:00 /usr/libexec/gsd-housekeeping
+akimovm+    2488  0.0  0.4 419460 13052 ?        Ssl  16:22   0:00 /usr/libexec/gsd-keyboard
+akimovm+    2489  0.0  0.5 752292 15176 ?        Ssl  16:22   0:00 /usr/libexec/gsd-media-keys
+akimovm+    2490  0.0  0.5 531164 15296 ?        Ssl  16:22   0:00 /usr/libexec/gsd-power
+akimovm+    2495  0.0  0.3 330328 10156 ?        Ssl  16:22   0:00 /usr/libexec/gsd-print-notifications
+akimovm+    2497  0.0  0.2 540580  6568 ?        Ssl  16:22   0:00 /usr/libexec/gsd-rfkill
+akimovm+    2500  0.0  0.2 318704  6100 ?        Ssl  16:22   0:00 /usr/libexec/gsd-screensaver-proxy
+akimovm+    2502  0.0  0.3 550264  9604 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sharing
+akimovm+    2503  0.0  0.2 395252  7728 ?        Ssl  16:22   0:00 /usr/libexec/gsd-smartcard
+akimovm+    2505  0.0  0.3 403624  8268 ?        Ssl  16:22   0:00 /usr/libexec/gsd-sound
+akimovm+    2507  0.0  0.5 494524 13384 ?        Ssl  16:22   0:00 /usr/libexec/gsd-wacom
+akimovm+    2518  0.0  0.2 305860  7520 ?        Sl   16:22   0:00 /usr/libexec/gsd-disk-utility-notify
+akimovm+    2519  0.0  2.0 996368 54124 ?        Sl   16:22   0:00 /usr/libexec/evolution-data-server/evolution-alarm-no
+akimovm+    2560  0.0  0.5 256804 14364 ?        S    16:22   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -cor
+akimovm+    2629  0.0  0.2  39128  7556 ?        Ss   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2656  0.0  0.4 423104 11844 ?        Sl   16:22   0:00 /usr/libexec/gsd-printer
+akimovm+    2681  0.0  0.3 619244 10216 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+akimovm+    2731  0.0  0.2 245940  7088 ?        Sl   16:22   0:00 /usr/libexec/ibus-memconf
+akimovm+    2734  0.1  0.8 428480 22748 ?        Sl   16:22   0:03 /usr/libexec/ibus-extension-gtk3
+akimovm+    2739  0.0  0.6 556428 16748 ?        Sl   16:22   0:00 /usr/libexec/goa-daemon
+akimovm+    2743  0.0  0.2 319540  7340 ?        Sl   16:22   0:00 /usr/libexec/ibus-portal
+akimovm+    2768  0.0  0.5 429596 13880 ?        Sl   16:22   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-des
+akimovm+    2778  0.0  0.8 900448 21048 ?        Ssl  16:22   0:00 /usr/libexec/evolution-calendar-factory
+akimovm+    2784  0.0  0.2 399884  7776 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-afc-volume-monitor
+akimovm+    2801  0.0  0.3 398808  8544 ?        Sl   16:22   0:00 /usr/libexec/goa-identity-service
+akimovm+    2814  0.0  0.2 318940  6696 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+akimovm+    2820  0.0  0.2 319892  6796 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+akimovm+    2829  0.0  0.9 762364 25812 ?        Ssl  16:22   0:00 /usr/libexec/evolution-addressbook-factory
+akimovm+    2834  0.0  0.2 318876  6464 ?        Ssl  16:22   0:00 /usr/libexec/gvfs-goa-volume-monitor
+akimovm+    2877  0.0  0.2 246064  7888 ?        Sl   16:22   0:00 /usr/libexec/ibus-engine-simple
+akimovm+    2883  0.0  0.2 230436  5644 ?        Ssl  16:22   0:00 /usr/libexec/dconf-service
+akimovm+    2909  0.0  0.2 245572  6680 ?        Ssl  16:22   0:00 /usr/libexec/gvfsd-metadata
+akimovm+    2910  0.0  0.3 545588  9328 ?        Sl   16:22   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvf
+akimovm+    2950  0.0  0.6 2741128 18320 ?       Sl   16:22   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Scre
+akimovm+    2979  0.0  1.0 819740 28220 ?        SNsl 16:22   0:01 /usr/libexec/tracker-miner-fs-3
+akimovm+    2980  0.0  0.5 710488 14804 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal
+akimovm+    2986  0.0  1.2 1086180 31748 ?       Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gnome
+akimovm+    2995  0.0  0.9 649052 26132 ?        Ssl  16:22   0:00 /usr/libexec/gsd-xsettings
+root        3059  0.0  0.0      0     0 ?        I<   16:22   0:00 [kworker/u516:9-ttm]
+akimovm+    3095  0.0  0.7 274636 19792 ?        Sl   16:22   0:00 /usr/libexec/ibus-x11
+akimovm+    3100  0.0  1.6 752356 43440 ?        Sl   16:22   0:00 /usr/libexec/mutter-x11-frames
+akimovm+    3124  0.0  0.7 425396 19620 ?        Ssl  16:22   0:00 /usr/libexec/xdg-desktop-portal-gtk
+akimovm+    3231  0.1  1.7 634612 46804 ?        Ssl  16:23   0:04 /usr/libexec/gnome-terminal-server
+akimovm+    3238  0.0  0.1  20380  3844 pts/0    Ss+  16:23   0:00 bash
+akimovm+    3252  0.0  0.9 499688 23776 ?        Sl   16:23   0:00 /usr/bin/update-notifier
+root        3710  0.0  0.2  13308  7152 ?        Ss   16:30   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startu
+root        3835  0.0  0.0      0     0 ?        I<   16:31   0:00 [kworker/R-tls-strp]
+akimovm+    3922  0.0  0.3 397948  8116 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-recent --spawner :1.19 /org/gtk/gv
+akimovm+    3925  0.0  0.3 398184  8256 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-network --spawner :1.19 /org/gtk/g
+akimovm+    3940  0.0  0.3 399188  8120 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.19 /org/gtk/gvf
+akimovm+    3946  0.0  0.3 397748  8088 ?        Sl   16:32   0:00 /usr/libexec/gvfsd-wsdd --spawner :1.19 /org/gtk/gvfs
+akimovm+    3951  0.0  0.8  53032 22880 ?        S    16:32   0:00 python3 /usr/bin/wsdd --no-host --discovery --listen
+root        3981  0.0  0.0      0     0 ?        I    16:32   0:02 [kworker/u514:0-flush-8:0]
+root        3987  0.0  0.0      0     0 ?        I<   16:32   0:00 [kworker/1:1H-kblockd]
+akimovm+    4314  0.0  0.5 1762864 13884 ?       Sl   16:34   0:00 /usr/bin/snap userd
+root        4934  0.0  0.0      0     0 ?        I<   16:36   0:00 [kworker/0:2H-kblockd]
+root        4944  0.0  0.0      0     0 ?        I    16:36   0:00 [kworker/u513:1-events_power_efficient]
+root        5235  0.1  0.0      0     0 ?        I    16:44   0:03 [kworker/1:1-events]
+root        5561  0.0  0.4  16496 10944 ?        Ss   16:47   0:00 sshd: akimovmir [priv]
+akimovm+    5605  0.2  0.2  16636  6920 ?        S    16:47   0:04 sshd: akimovmir@pts/2
+akimovm+    5606  0.0  0.2  20584  5972 pts/2    Ss   16:47   0:00 -bash
+root        5776  0.0  0.0      0     0 ?        I    16:49   0:00 [kworker/1:2-events]
+root        5797  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u514:2-flush-8:0]
+root        5828  0.0  0.0      0     0 ?        I    16:50   0:00 [kworker/u513:2-events_unbound]
+root        5891  0.1  0.0      0     0 ?        I    16:51   0:01 [kworker/0:1-events]
+root        5895  0.0  0.0      0     0 ?        I<   16:51   0:00 [kworker/u517:7-ttm]
+root        5923  0.0  0.4  44376 11448 ?        Ss   16:53   0:00 /usr/sbin/cupsd -l
+cups-br+    5924  0.0  0.7 267708 19868 ?        Ssl  16:53   0:00 /usr/sbin/cups-browsed
+root        6103  0.0  0.3  30044  8388 pts/2    S+   16:58   0:00 sudo -i
+root        6104  0.0  0.0  30044  2596 pts/1    Ss   16:58   0:00 sudo -i
+root        6105  0.0  0.2  20408  5764 pts/1    S    16:58   0:00 -bash
+root        6125  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u517:0-ttm]
+root        6133  0.0  0.0      0     0 ?        I<   16:59   0:00 [kworker/u516:0-ttm]
+root        6142  0.0  0.0      0     0 ?        I<   17:00   0:00 [kworker/1:2H]
+root        6246  0.0  0.0      0     0 ?        I    17:02   0:00 [kworker/0:2-events]
+root        6252  0.0  0.0      0     0 ?        I    17:03   0:00 [kworker/1:0-events]
+root        6256  0.0  0.0      0     0 ?        I    17:05   0:00 [kworker/u514:1-flush-8:0]
+root        6281  0.0  0.0      0     0 ?        I    17:07   0:00 [kworker/u513:0-writeback]
+root        6291  0.7  1.5 584928 41628 ?        Ssl  17:09   0:02 /usr/libexec/fwupd/fwupd
+akimovm+    6364  0.3  2.4 2896292 64436 ?       Sl   17:09   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft
+root        7144  0.0  0.0      0     0 ?        I<   17:09   0:00 [kworker/1:0H]
+root        7163  0.0  0.0      0     0 ?        I<   17:10   0:00 [kworker/u517:1-ttm]
+root        7164  0.0  0.0      0     0 ?        I<   17:10   0:00 [kworker/u517:2-ttm]
+root        7175  0.1  0.0      0     0 ?        I    17:10   0:00 [kworker/1:3-mm_percpu_wq]
+root        7185  0.0  0.0      0     0 ?        I    17:13   0:00 [kworker/0:0-events]
+akimovm+    7187 39.8 10.9 2892880 288960 ?      Sl   17:14   0:07 /snap/firefox/5273/usr/lib/firefox/firefox
+akimovm+    7303  0.5  1.8 211680 49368 ?        Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+root        7305  0.9  0.2  16460  7060 ?        Ss   17:14   0:00 /usr/lib/systemd/systemd-timedated
+akimovm+    7327  5.6  4.7 2454840 123932 ?      Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7508  4.6  3.7 2430000 98112 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7831  0.7  1.7 210316 46772 ?        Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7839  1.6  2.7 2397292 73444 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7843  1.7  2.7 2397292 73556 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+akimovm+    7846  1.9  2.7 2397292 73608 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentpr
+root        7902  200  0.1  20024  4356 pts/1    R+   17:14   0:00 ps aux
+root@akimovmir-VMware-Virtual-Platform:~# ps aux | grep firefox
+akimovm+    7187 33.1 10.8 2897984 286092 ?      Sl   17:14   0:07 /snap/firefox/5273/usr/lib/firefox/firefox
+akimovm+    7303  0.4  1.8 211680 49368 ?        Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -parentBuildID 20241111090008 -prefsLen 31496 -prefMapSize 256220 -appDir /snap/firefox/5273/usr/lib/firefox/browser {4c0b0a9c-6205-48e0-974d-222b7c1731f5} 7187 true 1 socket
+akimovm+    7327  4.5  4.7 2454840 123932 ?      Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 31637 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {58b43053-c869-4649-a885-908545fd604d} 7187 true 2 tab
+akimovm+    7508  3.7  3.5 2428976 92348 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 38232 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {130dd9c7-3645-4efd-b838-d77a7d51d0e9} 7187 true 3 tab
+akimovm+    7831  0.5  1.7 210316 46772 ?        Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -parentBuildID 20241111090008 -sandboxingKind 0 -prefsLen 38286 -prefMapSize 256220 -appDir /snap/firefox/5273/usr/lib/firefox/browser {39a4b2ec-7831-4468-8e18-d1da8c86f1f5} 7187 true 4 utility
+akimovm+    7839  1.2  2.7 2397292 73444 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 34994 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {5237c323-12ad-430e-8c04-62b742288cc5} 7187 true 5 tab
+akimovm+    7843  1.3  2.7 2397292 73556 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 34994 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {07d69f1e-d0db-48bb-8a76-cb5695156bb3} 7187 true 6 tab
+akimovm+    7846  1.5  2.7 2397292 73608 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 34994 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {6bec55c7-a6c5-4c1c-89c4-b958eb03ec77} 7187 true 7 tab
+root        7906  0.0  0.0  17912  2380 pts/1    S+   17:14   0:00 grep --color=auto firefox
+root@akimovmir-VMware-Virtual-Platform:~# ps aux | grep firefox
+akimovm+    7187 12.9 10.8 2895840 284908 ?      Sl   17:14   0:07 /snap/firefox/5273/usr/lib/firefox/firefox
+akimovm+    7303  0.1  1.8 211680 49368 ?        Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -parentBuildID 20241111090008 -prefsLen 31496 -prefMapSize 256220 -appDir /snap/firefox/5273/usr/lib/firefox/browser {4c0b0a9c-6205-48e0-974d-222b7c1731f5} 7187 true 1 socket
+akimovm+    7327  1.6  4.6 2454776 123124 ?      Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 31637 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {58b43053-c869-4649-a885-908545fd604d} 7187 true 2 tab
+akimovm+    7508  1.3  3.4 2428912 91500 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 38232 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {130dd9c7-3645-4efd-b838-d77a7d51d0e9} 7187 true 3 tab
+akimovm+    7831  0.1  1.7 210316 46772 ?        Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -parentBuildID 20241111090008 -sandboxingKind 0 -prefsLen 38286 -prefMapSize 256220 -appDir /snap/firefox/5273/usr/lib/firefox/browser {39a4b2ec-7831-4468-8e18-d1da8c86f1f5} 7187 true 4 utility
+akimovm+    7839  0.3  2.7 2397292 73444 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 34994 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {5237c323-12ad-430e-8c04-62b742288cc5} 7187 true 5 tab
+akimovm+    7843  0.4  2.7 2397292 73556 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 34994 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {07d69f1e-d0db-48bb-8a76-cb5695156bb3} 7187 true 6 tab
+akimovm+    7846  0.4  2.7 2397292 73608 ?       Sl   17:14   0:00 /snap/firefox/5273/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsLen 34994 -prefMapSize 256220 -jsInitLen 234660 -parentBuildID 20241111090008 -greomni /snap/firefox/5273/usr/lib/firefox/omni.ja -appomni /snap/firefox/5273/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/5273/usr/lib/firefox/browser {6bec55c7-a6c5-4c1c-89c4-b958eb03ec77} 7187 true 7 tab
+root        7915  0.0  0.0  17912  2444 pts/1    S+   17:15   0:00 grep --color=auto firefox
+root@akimovmir-VMware-Virtual-Platform:~#
+root@akimovmir-VMware-Virtual-Platform:~# kill 7187
+root@akimovmir-VMware-Virtual-Platform:~# ps aux | grep firefox
+root        7929  0.0  0.0  17912  2444 pts/1    S+   17:16   0:00 grep --color=auto firefox

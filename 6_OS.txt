@@ -1,0 +1,100 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ nano test
+#!bin/bash
+echo $USER
+echo $USER
+echo $USER
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ bash test
+akimovmir
+akimovmir
+akimovmir
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ nano code
+#!/bin/bash
+a=0;
+while [ $a -ne 102 ]
+do
+echo value: $a;
+a=$(($a+2));
+done
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ bash code
+value: 0
+value: 2
+value: 4
+value: 6
+value: 8
+value: 10
+value: 12
+value: 14
+value: 16
+value: 18
+value: 20
+value: 22
+value: 24
+value: 26
+value: 28
+value: 30
+value: 32
+value: 34
+value: 36
+value: 38
+value: 40
+value: 42
+value: 44
+value: 46
+value: 48
+value: 50
+value: 52
+value: 54
+value: 56
+value: 58
+value: 60
+value: 62
+value: 64
+value: 66
+value: 68
+value: 70
+value: 72
+value: 74
+value: 76
+value: 78
+value: 80
+value: 82
+value: 84
+value: 86
+value: 88
+value: 90
+value: 92
+value: 94
+value: 96
+value: 98
+value: 100
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ nano text.txt
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ touch text.txt.bak
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo nano /etc/crontab
+[sudo] пароль для akimovmir:
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; }
+47 6    * * 7   root    test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.weekly; }
+52 6    1 * *   root    test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.monthly; }
+#
+*/10 * * * * akimovmir cp /home/akimovmir/text.txt /home/akimovmir/text.txt.bak
+
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cat text.txt.bak
+this is text.txt file

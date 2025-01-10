@@ -1,0 +1,111 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo nano /etc/apt/sources.list
+[sudo] пароль для akimovmir:
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo apt-get install nginx
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово    	 
+Уже установлен пакет nginx самой новой версии (1.26.0-2ubuntu3).
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 29 пакетов не обновлено.
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo dpkg --force-all --remove nginx
+dpkg: nginx: имеются проблемы с зависимостями, но по вашему указанию
+он всё равно будет удалён:
+ nginx-common зависит от nginx (>= 1.26.0-2ubuntu3).
+ nginx-common зависит от nginx (<< 1.26.0-2ubuntu3.1~).
+ nginx-common зависит от nginx (>= 1.26.0-2ubuntu3).
+ nginx-common зависит от nginx (<< 1.26.0-2ubuntu3.1~).
+
+(Чтение базы данных … на данный момент установлено 153709 файлов и каталогов.)
+Удаляется nginx (1.26.0-2ubuntu3) …
+Обрабатываются триггеры для man-db (2.12.1-3) …
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo snap install free-games-webapp
+free-games-webapp 0.9.8 from NotForSale_ (mauringo) installed
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ snap list
+Название               	Версия       	Правка  Канал        	Издатель	Примечание
+bare                   	1.0          	5   	latest/stable	canonical✓  base
+core18                 	20240920     	2846	latest/stable	canonical✓  base
+core22                 	20241119     	1722	latest/stable	canonical✓  base
+desktop-security-center	0+git.84f197a	32  	1/stable/…   	canonical✓  -
+firefox                	132.0.2-2    	5273	latest/stable/…  mozilla✓	-
+firmware-updater       	0+git.7983059	147 	1/stable/…   	canonical✓  -
+free-games-webapp      	0.9.8        	2   	latest/stable	mauringo	-
+gnome-42-2204          	0+git.510a601	176 	latest/stable/…  canonical✓  -
+gtk-common-themes      	0.1-81-g442e511  1535	latest/stable/…  canonical✓  -
+prompting-client       	0+git.d60470b	51  	1/stable/…   	canonical✓  -
+snap-store             	0+git.6c6a0d96   1244	2/stable/…   	canonical✓  -
+snapd                  	2.66.1       	23258   latest/stable	canonical✓  snapd
+snapd-desktop-integration  0.9          	253 	latest/stable/…  canonical✓  -
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo ufw allow 22
+Правила обновлены
+Правила обновлены (v6)
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo ufw allow 80
+Правила обновлены
+Правила обновлены (v6)
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo ufw enable
+Межсетевой экран включён и будет запускаться при запуске системы
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo ufw status
+Состояние: активен
+
+В                      	Действие	Из
+-                      	--------	--
+22                     	ALLOW   	Anywhere             	 
+80                     	ALLOW   	Anywhere             	 
+22 (v6)                	ALLOW   	Anywhere (v6)        	 
+80 (v6)                	ALLOW   	Anywhere (v6)        	 
+
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo sysctl -w
+sysctl: не указаны переменные
+Выполните `sysctl --help' для более подробной информации.
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sysctl --help
+
+Использование:
+ sysctl [параметры] [переменная[=значение] ...]
+
+Параметры:
+  -a, --all        	показать все переменные
+  -A               	то же, что и -a
+  -X               	то же, что и -a
+  	--deprecated 	include deprecated parameters to listing
+  	--dry-run    	Print the key and values but do not write
+  -b, --binary     	выводить значение без перевода строки
+  -e, --ignore     	пропускать ошибки неизвестных переменных
+  -N, --names      	выводить имена переменных без значений
+  -n, --values     	вывести только значения заданной переменной или переменных
+  -p, --load[=<файл>]  читать значения из файла
+  -f               	то же, что и -p
+  	--system     	читать значения из всех системных каталогов
+  -r, --pattern <expression>
+                   	select setting that match expression
+  -q, --quiet      	do not echo variable set
+  -w, --write      	разрешить запись значения в переменную
+  -o               	ничего не делает
+  -x               	ничего не делает
+  -d               	то же, что и -h
+
+ -h, --help 	вывести эту справку и выйти
+ -V, --version  вывести информацию и выйти
+
+Подробнее смотрите sysctl(8).
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo sysctl -w
+sysctl: не указаны переменные
+Выполните `sysctl --help' для более подробной информации.
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo sysctl -w net.ipv4.ip_forward=1
+net.ipv4.ip_forward = 1
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ sudo iptables -t nat -L
+Chain PREROUTING (policy ACCEPT)
+target 	prot opt source           	destination    	 
+REDIRECT   tcp  --  anywhere         	anywhere         	tcp dpt:http redir ports 8080
+
+Chain INPUT (policy ACCEPT)
+target 	prot opt source           	destination    	 
+
+Chain OUTPUT (policy ACCEPT)
+target 	prot opt source           	destination    	 
+
+Chain POSTROUTING (policy ACCEPT)
+target 	prot opt source           	destination    	 
+akimovmir@akimovmir-VMware-Virtual-Platform:~$
+
+
+
+

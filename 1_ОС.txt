@@ -1,0 +1,168 @@
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ cat /etc/*-release
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=24.10
+DISTRIB_CODENAME=oracular
+DISTRIB_DESCRIPTION="Ubuntu 24.10"
+PRETTY_NAME="Ubuntu 24.10"
+NAME="Ubuntu"
+VERSION_ID="24.10"
+VERSION="24.10 (Oracular Oriole)"
+VERSION_CODENAME=oracular
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=oracular
+LOGO=ubuntu-logo
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ mkdir Students
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+Desktop	Downloads  Pictures  snap  	Templates
+Documents  Music  	Public	Students  Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ mkdir Mentors
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l
+итого 44
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Desktop
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Documents
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Downloads
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 12:42 Mentors
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Music
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Pictures
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Public
+drwx------ 7 akimovmir akimovmir 4096 ноя 14 09:00 snap
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 12:41 Students
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Templates
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ touch ~/Students/student_list.txtakimovmir@akimovmir-VMware-Virtual-Platform:~$ touch ~/Mentors/mentors_list.txt
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ nano ~/Students/student_list.txt
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ nano ~/Mentors/mentors_list.txt
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ mv ~/Mentors/mentors_list.txt ~/Students
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ rm -rf Mentors
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l
+итого 40
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Desktop
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Documents
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Downloads
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Music
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Pictures
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Public
+drwx------ 7 akimovmir akimovmir 4096 ноя 14 09:00 snap
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 12:55 Students
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Templates
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ mv Students student_and_mentors
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l
+итого 40
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Desktop
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Documents
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Downloads
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Music
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Pictures
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Public
+drwx------ 7 akimovmir akimovmir 4096 ноя 14 09:00 snap
+drwxrwxr-x 2 akimovmir akimovmir 4096 ноя 14 12:55 student_and_mentors
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Templates
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ rm -rf student_and_mentors
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls -l
+итого 36
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Desktop
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Documents
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Downloads
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Music
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Pictures
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Public
+drwx------ 7 akimovmir akimovmir 4096 ноя 14 09:00 snap
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Templates
+drwxr-xr-x 2 akimovmir akimovmir 4096 ноя 14 12:38 Videos
+
+
+
+C:\Users\123>ssh -V
+OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+
+C:\Users\123>ssh akimovmir@192.168.244.129
+akimovmir@192.168.244.129's password:
+Welcome to Ubuntu 24.10 (GNU/Linux 6.11.0-9-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+11 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Last login: Thu Nov 14 13:25:38 2024 from 192.168.244.1
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+1_OC  Desktop  Documents  Downloads  ERROR.txt  file.txt  Mir  Music  Pictures  Public  snap  Templates  Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ exit
+выход
+Connection to 192.168.244.129 closed.
+
+PS C:\Users\123> ssh akimovmir@192.168.244.129
+akimovmir@192.168.244.129's password:
+Welcome to Ubuntu 24.10 (GNU/Linux 6.11.0-9-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+11 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Last login: Mon Nov 25 16:39:32 2024 from 192.168.244.1
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+1_OC  Desktop  Documents  Downloads  ERROR.txt  file.txt  Mir  Music  Pictures  Public  snap  Templates  Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ exit
+выход
+Connection to 192.168.244.129 closed.
+PS C:\Users\123>ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (C:\Users\123/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\123/.ssh/id_ed25519
+Your public key has been saved in C:\Users\123/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:cl793rSHIR9D9qYwlc0y8KfVJfCz/yJSTovlj3saq6g 123@LAPTOP-TJF0LR34
+The key's randomart image is:
++--[ED25519 256]--+
+|            ..   |
+|            ... .|
+|             oo=o|
+|           .  Oo*|
+|      . S . .+.B |
+|       + .  B.=.o|
+|        .  B.*.Bo|
+|         .o ==*o+|
+|      E.. .o=*oo+|
++----[SHA256]-----+
+
+PS C:\Users\123> cat ~/.ssh/id_ed25519.pub | ssh akimovmir@192.168.244.129 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+akimovmir@192.168.244.129's password:
+PS C:\Users\123> ssh akimovmir@192.168.244.129
+Welcome to Ubuntu 24.10 (GNU/Linux 6.11.0-9-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+11 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Last login: Mon Nov 25 16:44:45 2024 from 192.168.244.1
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ ls
+1_OC  Desktop  Documents  Downloads  ERROR.txt  file.txt  Mir  Music  Pictures  Public  snap  Templates  Videos
+akimovmir@akimovmir-VMware-Virtual-Platform:~$ exit
+выход
+Connection to 192.168.244.129 closed.
